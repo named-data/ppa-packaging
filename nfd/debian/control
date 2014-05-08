@@ -1,0 +1,22 @@
+Source: nfd
+Priority: extra
+Maintainer: Alexander Afanasyev <alexander.afanasyev@ucla.edu>
+Build-Depends: debhelper (>= 8.0.0),
+ python (>= 2.7.0),
+ pkg-config (>= 0.26),
+ ndn-cxx-dev (>= 0.1.0~rc1),
+ python-sphinx,
+ libpcap-dev,
+ libboost-all-dev (>= 1.48.0)
+Standards-Version: 3.9.2
+Section: net
+Homepage: http://named-data.net/doc/NFD/
+Vcs-Git: git://github.com/named-data/NFD.git
+Vcs-Browser: http://github.com/named-data/NFD
+
+Package: nfd
+Architecture: i386 amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, ndn-cxx
+Description: NFD - Named Data Networking Forwarding Daemon
+ NFD is a network forwarder that implements and evolves together with the Named Data
+ Networking (NDN) protocol.
