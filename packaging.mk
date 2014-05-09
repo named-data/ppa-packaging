@@ -4,23 +4,24 @@ PPA=ppa:named-data/ppa
 # List of target distributions
 DISTROS=precise saucy trusty
 
-DEBUILD=debuild -S -sa
+DEBUILD=debuild -S
 
 all: _phony
 
 _phony:
 
-distro: work/${NAME}
+distro: work/${NAME}_${VERSION}
 
-work/${NAME}:
+work/${NAME}_${VERSION}:
 	\
 mkdir work || true ; \
 cd work	; \
-git clone --recursive "${GIT_URL}" "${NAME}" ; \
-cd "${NAME}" ; \
+git clone "${GIT_URL}" "${NAME}_${VERSION}" ; \
+cd "${NAME}_${VERSION}" ; \
 git checkout "${GIT_VERSION}" ; \
-git archive --format=tar.gz --prefix=${NAME}_${VERSION}/ \
-  -o ../${NAME}_${VERSION}.orig.tar.gz HEAD
+git submodule init ; git submodule update ; \
+cd .. ; \
+tar --exclude .git -czf ${NAME}_${VERSION}.orig.tar.gz ${NAME}_${VERSION}
 
 build: distro
 	\
@@ -32,7 +33,7 @@ if test -z "$$DEBEMAIL" -o -z "$$DEBFULLNAME"; then \
   exit 1; \
 fi
 	\
-cd "work/${NAME}" ; \
+cd "work/${NAME}_${VERSION}" ; \
 for distro in ${DISTROS}; do \
   NEW_VER="${VERSION}-ppa${PPA_VERSION}~$$distro"; \
   rm -Rf debian ; cp -r ../../debian . ; \
