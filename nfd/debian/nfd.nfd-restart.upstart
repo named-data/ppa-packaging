@@ -1,0 +1,12 @@
+# nfd-restart.conf
+#
+# Restarting NDN Forwarding Daemon on network connectivity changes
+
+start on net-device-up
+task
+instance $IFACE
+
+script
+        status nfd | grep -q start/ || stop
+        restart nfd
+end script
