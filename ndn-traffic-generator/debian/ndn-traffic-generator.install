@@ -1,0 +1,4 @@
+usr/bin/*
+etc/ndn/*
+etc/ndn/ndn-traffic-client.conf.sample etc/ndn/ndn-traffic-client.conf
+etc/ndn/ndn-traffic-server.conf.sample etc/ndn/ndn-traffic-server.conf
