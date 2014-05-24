@@ -1,10 +1,10 @@
 Format: http://dep.debian.net/deps/dep5
-Upstream-Name: nfd
-Source: http://github.com/named-data/NFD
+Upstream-Name: ndn-tlv-ping
+Source: http://github.com/named-data/ndn-tlv-ping
 
 Files: *
 Copyright: Copyright (C) 2014 University of Arizona.
-License: Unknown
+License: GPL-3+
 
 Files: debian/*
 Copyright: Copyright (c) 2013-2014, Alexander Afanasyev <alexander.afanasyev@ucla.edu>
