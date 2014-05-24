@@ -1,0 +1,39 @@
+description "NFD Autoreg Server"
+author      "Alexander Afanasyev <alexander.afanasyev@ucla.edu>"
+
+start on started  nrd
+stop  on stopping nrd
+
+respawn
+respawn limit unlimited
+
+setuid ndn
+setgid ndn
+
+script
+  BLACKLIST=""
+  WHITELIST=""
+  PREFIXES=""
+  FLAGS=""
+  if [ -f /etc/default/nfd-autoreg ]; then
+      . /etc/default/nfd-autoreg
+  fi
+
+  blacklist=""
+  if [ "$BLACKLIST" != "" ]; then
+    blacklist=`for i in $BLACKLIST; do echo -n "-b $i "; done`
+  fi
+
+  whitelist=""
+  if [ "$WHITELIST" != "" ]; then
+    whitelist=`for i in $WHITELIST; do echo -n "-w $i "; done`
+  fi
+
+  prefixes=""
+  if [ "$PREFIXES" != "" ]; then
+    prefixes=`for i in $PREFIXES; do echo -n "--prefix $i "; done`
+  fi
+
+  export HOME=/var/lib/ndn/nfd-autoreg
+  exec /usr/bin/nfd-autoreg $blacklist $whitelist $prefixes $FLAGS
+end script

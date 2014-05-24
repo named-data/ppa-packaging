@@ -20,3 +20,13 @@ Depends: ${shlibs:Depends}, ${misc:Depends}, ndn-cxx
 Description: NFD - Named Data Networking Forwarding Daemon
  NFD is a network forwarder that implements and evolves together with the Named Data
  Networking (NDN) protocol.
+
+Package: nfd-status-http-server
+Architecture: i386 amd64
+Depends: nfd (= ${binary:Version}), ${misc:Depends}
+Description: NFD HTTP status server
+
+Package: nfd-autoreg
+Architecture: i386 amd64
+Depends: nfd (= ${binary:Version}), ${misc:Depends}
+Description: NFD autoreg server

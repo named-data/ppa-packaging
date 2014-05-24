@@ -1,0 +1,6 @@
+# defaults for ndn-tlv-ping server
+
+# Prefix should be set to a valid value
+PREFIX="/localhost/ndnpingserver"
+
+FLAGS=""

@@ -1,0 +1,19 @@
+#!/bin/sh -e
+
+if [ "$1" != "configure" ]; then
+        exit 0
+fi
+
+APP=ndn-tlv-ping
+
+if [ ! -f /var/lib/ndn/$APP/.ndn/ndnsec-public-info.db ]; then
+    # Create HOME and generate self-signed NDN certificate
+    sudo mkdir -p /var/lib/ndn/$APP/.ndn
+    sudo chown -R ndn:ndn /var/lib/ndn/$APP
+    sudo -u ndn -g ndn HOME=/var/lib/ndn/$APP ndnsec-keygen /localhost/daemons/$APP | \
+      sudo -u ndn -g ndn HOME=/var/lib/ndn/$APP ndnsec-install-cert -
+fi
+
+#DEBHELPER#
+
+exit 0

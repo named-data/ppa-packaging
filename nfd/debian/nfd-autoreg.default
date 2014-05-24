@@ -1,0 +1,13 @@
+# nfd-autoreg defaults
+
+# Blacklisted networks
+BLACKLIST="10.0.0.0/8"
+
+# Whitelisted networks
+WHITELIST=""
+
+# Prefixes to register
+PREFIXES="/ndn/guest /ndn/broadcast"
+
+# Flags
+FLAGS=""
