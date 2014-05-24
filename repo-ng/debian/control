@@ -1,0 +1,19 @@
+Source: ndn-tlv-ping
+Priority: extra
+Maintainer: Alexander Afanasyev <alexander.afanasyev@ucla.edu>
+Build-Depends: debhelper (>= 8.0.0),
+ python (>= 2.7.0),
+ pkg-config (>= 0.26),
+ ndn-cxx-dev (>= 0.1.0~rc1)
+Standards-Version: 3.9.2
+Section: net
+Homepage: http://github.com/named-data/repo-ng
+Vcs-Git: git://github.com/named-data/repo-ng.git
+Vcs-Browser: http://github.com/named-data/repo-ng
+
+Package: repo-ng
+Architecture: i386 amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, ndn-cxx
+Description: Next generation of NDN repository
+ repo-ng is an implementation of a Named Data Networking data repository with the protocol
+ defined on NDN wiki: http://redmine.named-data.net/projects/repo-ng/wiki

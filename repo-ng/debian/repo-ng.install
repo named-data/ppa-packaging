@@ -1,0 +1,3 @@
+etc/ndn/*
+debian/repo-ng.conf etc/ndn/
+usr/bin/*
