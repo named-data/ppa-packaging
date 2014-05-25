@@ -1,0 +1,18 @@
+Source: ndndump
+Priority: extra
+Maintainer: Alexander Afanasyev <alexander.afanasyev@ucla.edu>
+Build-Depends: debhelper (>= 8.0.0),
+ python (>= 2.7.0),
+ pkg-config (>= 0.26),
+ ndn-cxx-dev (>= 0.1.0~rc1)
+Standards-Version: 3.9.2
+Section: net
+Homepage: http://github.com/named-data/ndndump
+Vcs-Git: git://github.com/named-data/ndndump.git
+Vcs-Browser: http://github.com/named-data/ndndump
+
+Package: ndndump
+Architecture: i386 amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, ndn-cxx
+Description: Packet capture and analysis tool for NDN
+ ndndump was created to provide a tcpdump-like tool for Named Data Networking (NDN).
