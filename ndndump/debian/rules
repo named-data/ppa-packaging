@@ -15,10 +15,10 @@ LDFLAGS := $(shell dpkg-buildflags --get LDFLAGS)
 	dh $@ --parallel
 
 override_dh_auto_configure:
-	./waf --nocache configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var
+	./waf configure --prefix=/usr
 
 override_dh_auto_build:
-	./waf --nocache build
+	./waf build
 
 override_dh_auto_install:
 	./waf install --destdir=debian/tmp

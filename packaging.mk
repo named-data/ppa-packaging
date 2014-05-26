@@ -23,7 +23,16 @@ git submodule init ; git submodule update ; \
 cd .. ; \
 tar --exclude .git -czf ${NAME}_${VERSION}.orig.tar.gz ${NAME}_${VERSION}
 
-build: distro
+source-build:
+	$(MAKE) _build DEBUILD="debuild -S -sa"
+
+build:
+	$(MAKE) _build DEBUILD=debuild DISTROS=precise
+
+install: build
+	sudo dpkg -i work/*.deb
+
+_build: distro
 	\
 if test -z "$$DEBEMAIL" -o -z "$$DEBFULLNAME"; then \
   echo "DEBFULLNAME and DEBEMAIL environmental variable should be set" ; \
@@ -57,7 +66,7 @@ than the one specified in changelog ($$NEW_VER < $$CUR_VER)" ; \
   ${DEBUILD} ; \
 done
 
-dput: build
+dput: source-build
 	\
 cd "work" ; \
 for distro in ${DISTROS}; do \
