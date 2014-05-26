@@ -1,5 +1,5 @@
 # PPA archive
-PPA=ppa:named-data/ppa
+PPA=ppa:named-data/ppa-dev
 
 # List of target distributions
 DISTROS=precise saucy trusty
