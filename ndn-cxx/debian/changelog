@@ -1,3 +1,10 @@
+ndn-cxx (0.2.0~rc0.1-ppa1~DISTRO) DISTRO; urgency=low
+
+  * New version based on 40b53090140b2588a17a1de50ff200fa72cf1f19
+    (https://github.com/named-data/ndn-cxx.git)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Thu, 19 Jun 2014 12:38:32 -0700
+
 ndn-cxx (0.2.0~rc0-ppa1~DISTRO) DISTRO; urgency=low
 
   * New version based on c169a81a5caf3cb4dc14a0258719bc1ef09663cc
