@@ -1,3 +1,10 @@
+nfd (0.2.0~rc1-ppa2~DISTRO) DISTRO; urgency=low
+
+  * New version based on NFD-0.2.0-rc1 (https://github.com/named-
+    data/NFD.git)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Tue, 01 Jul 2014 23:19:58 -0700
+
 nfd (0.2.0~rc0.1-ppa2~DISTRO) DISTRO; urgency=low
 
   * New version based on bb964663a97f3fbfb70dc78789cf592f9454ab98
