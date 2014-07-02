@@ -2,13 +2,13 @@
 GIT_URL=https://github.com/named-data/ndn-traffic-generator
 
 # Tag name or commit hash for checkout
-GIT_VERSION=420dbf0462f2e27f5140358237d41c69252b275b
+GIT_VERSION=976c3972c738ba027a7ada551d4204869aefcd34
 
 # Package name
 NAME=ndn-traffic-generator
 
 # Package version
-VERSION=0.0.0
+VERSION=0.0.1
 
 # PPA version
 PPA_VERSION=1

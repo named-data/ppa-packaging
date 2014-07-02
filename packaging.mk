@@ -21,7 +21,7 @@ cd "${NAME}_${VERSION}" ; \
 git checkout "${GIT_VERSION}" ; \
 git submodule init ; git submodule update ; \
 cd .. ; \
-tar --exclude .git -czf ${NAME}_${VERSION}.orig.tar.gz ${NAME}_${VERSION}
+tar --exclude .git -cf - ${NAME}_${VERSION} | gzip -n9c > ${NAME}_${VERSION}.orig.tar.gz
 
 source-build:
 	$(MAKE) _build DEBUILD="debuild -S -sa"

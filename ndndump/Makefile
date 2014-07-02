@@ -11,6 +11,6 @@ NAME=ndndump
 VERSION=0.0.0
 
 # PPA version
-PPA_VERSION=2
+PPA_VERSION=3
 
 include ../packaging.mk
