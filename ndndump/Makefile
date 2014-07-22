@@ -8,9 +8,9 @@ GIT_VERSION=22f77ef777d7201b3677b04e6b1e0e85c45f0238
 NAME=ndndump
 
 # Package version
-VERSION=0.0.0
+VERSION=0.0.1
 
 # PPA version
-PPA_VERSION=3
+PPA_VERSION=1
 
 include ../packaging.mk
