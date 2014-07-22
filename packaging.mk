@@ -70,7 +70,7 @@ dput: source-build
 	\
 cd "work" ; \
 for distro in ${DISTROS}; do \
-  dput "${PPA}" "${NAME}_${VERSION}-ppa${PPA_VERSION}~$$distro""_source.changes" ; \
+  dput -f "${PPA}" "${NAME}_${VERSION}-ppa${PPA_VERSION}~$$distro""_source.changes" ; \
 done ; \
 \
 cd .. ; \
