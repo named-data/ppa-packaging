@@ -11,6 +11,6 @@ NAME=ndn-tlv-ping
 VERSION=0.1.0
 
 # PPA version
-PPA_VERSION=3
+PPA_VERSION=4
 
 include ../packaging.mk

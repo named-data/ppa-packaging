@@ -1,3 +1,10 @@
+repo-ng (0.0.1-ppa2~DISTRO) DISTRO; urgency=low
+
+  * New version based on 28a90fbc7a4be6d609946d07db6cce5b54a8a134
+    (https://github.com/named-data/repo-ng)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Tue, 22 Jul 2014 10:54:54 -0700
+
 repo-ng (0.0.0-ppa2~DISTRO) DISTRO; urgency=low
 
   * New version based on 91fb4f2e5067d2fd6a591d885353a449bc65b399

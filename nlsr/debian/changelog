@@ -1,3 +1,10 @@
+nlsr (0.1~rc0.1-ppa1~DISTRO) DISTRO; urgency=low
+
+  * New version based on bf11c5f1aa51bdeb7b8ecded11445fadf26f8fb5
+    (https://github.com/named-data/NLSR)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Tue, 22 Jul 2014 10:54:26 -0700
+
 nlsr (0.0~rc0-ppa0~DISTRO) DISTRO; urgency=low
 
   * Initial release

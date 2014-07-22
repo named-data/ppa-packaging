@@ -5,7 +5,7 @@ Build-Depends: debhelper (>= 8.0.0),
  python (>= 2.7.0),
  pkg-config (>= 0.26),
  libpcap-dev,
- ndn-cxx-dev (>= 0.2.0~rc1)
+ ndn-cxx-dev (>= 0.2.0~rc1.1)
 Standards-Version: 3.9.2
 Section: net
 Homepage: http://github.com/named-data/ndndump

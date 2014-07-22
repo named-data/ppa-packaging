@@ -2,7 +2,7 @@
 PPA=ppa:named-data/ppa-dev
 
 # List of target distributions
-DISTROS=precise saucy trusty
+DISTROS=precise trusty
 
 DEBUILD=debuild -S
 
@@ -27,7 +27,7 @@ source-build:
 	$(MAKE) _build DEBUILD="debuild -S -sa"
 
 build:
-	$(MAKE) _build DEBUILD=debuild DISTROS=precise
+	$(MAKE) _build DEBUILD=debuild DISTROS=trusty
 
 install: build
 	sudo dpkg -i work/*.deb
