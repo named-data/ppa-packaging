@@ -4,7 +4,7 @@ Maintainer: A K M Mahmudul Hoque <ahoque1@memphis.edu>
 Build-Depends: debhelper (>= 8.0.0),
  python (>= 2.7.0),
  pkg-config (>= 0.26),
- ndn-cxx-dev (>= 0.2.0~rc1.1), 
+ ndn-cxx-dev (>= 0.2.0~rc2),
  liblog4cxx10-dev (>= 0.10.0),
  libcrypto++-dev (>= 5.6.1),
  protobuf-compiler (>= 2.4.0),
@@ -19,4 +19,4 @@ Vcs-Browser: http://github.com/named-data/NLSR
 Package: nlsr
 Architecture: i386 amd64
 Depends: ${shlibs:Depends}, ${misc:Depends} , ndn-cxx
-Description: A link state routing protocol for Named Data Networking 
+Description: A link state routing protocol for Named Data Networking
