@@ -26,4 +26,5 @@ end script
 
 post-stop exec sleep 2
 
-reload signal SIGHUP
+# The following option is useful, but not supported on Ubuntu 12.04
+# reload signal SIGHUP
