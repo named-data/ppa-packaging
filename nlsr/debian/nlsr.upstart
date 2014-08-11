@@ -1,0 +1,24 @@
+# nlsr.conf
+#
+# NDN NLSR Routing Daemon
+
+description "NDN NLSR Routing Daemon"
+author      "John DeHart <jdd@wustl.edu>"
+
+start on started  nrd
+stop  on stopping nrd
+
+respawn
+respawn limit unlimited
+
+setuid nlsr
+setgid nlsr
+
+pre-start exec sleep 2
+
+script
+  export HOME=/var/lib/ndn/nlsr
+  exec /usr/bin/nlsr -f /etc/ndn/nlsr/nlsr.conf
+end script
+
+post-stop exec sleep 2

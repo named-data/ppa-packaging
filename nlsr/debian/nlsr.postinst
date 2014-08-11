@@ -1,0 +1,20 @@
+#!/bin/sh -e
+
+if [ "$1" != "configure" ]; then
+        exit 0
+fi
+
+if [ ! -d /var/log/ndn/nlsr ]; then
+    mkdir -p /var/log/ndn/nlsr
+    chown -R nlsr:nlsr /var/log/ndn/nlsr
+fi
+
+if [ ! -d /var/lib/ndn/nlsr ]; then
+    # Create HOME and generate self-signed NDN certificate for nrd
+    sudo mkdir -p /var/lib/ndn/nlsr/.ndn
+    sudo chown -R nlsr:nlsr /var/lib/ndn/nlsr
+fi
+
+#DEBHELPER#
+
+exit 0
