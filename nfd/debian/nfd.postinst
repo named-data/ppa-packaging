@@ -4,8 +4,11 @@ if [ "$1" != "configure" ]; then
         exit 0
 fi
 
-mkdir -p /var/log/ndn
-chown -R ndn:ndn /var/log/ndn
+
+if [ ! -d /var/log/ndn ]; then
+    mkdir -p /var/log/ndn
+    chown -R ndn:ndn /var/log/ndn
+fi
 
 if [ ! -f /etc/ndn/certs/localhost_daemons_nrd.ndncert ]; then
     # Create HOME and generate self-signed NDN certificate for nfd
