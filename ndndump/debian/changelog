@@ -1,3 +1,9 @@
+ndndump (0.5-ppa1~DISTRO) DISTRO; urgency=low
+
+  * New version based on 0.5 (https://github.com/named-data/ndndump)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Tue, 12 Aug 2014 17:32:34 -0700
+
 ndndump (0.0.1-ppa2~DISTRO) DISTRO; urgency=low
 
   * New version based on 22f77ef777d7201b3677b04e6b1e0e85c45f0238
