@@ -1,3 +1,10 @@
+ndn-cxx (0.2.0~rc2.2-ppa1~DISTRO) DISTRO; urgency=low
+
+  * New version based on aa21462413e56844ab7076ab267275cd257d2b90
+    (http://gerrit.named-data.net/ndn-cxx)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Wed, 13 Aug 2014 18:38:29 -0700
+
 ndn-cxx (0.2.0~rc2.1-ppa1~DISTRO) DISTRO; urgency=low
 
   * New version based on 709116552edcd7821cb3fd41450f49430026c719
