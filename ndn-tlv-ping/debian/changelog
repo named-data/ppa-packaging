@@ -1,3 +1,10 @@
+ndn-tlv-ping (0.1.1-ppa3~DISTRO) DISTRO; urgency=low
+
+  * New version based on d957b493b6d20416e7897f97a96c310e4cde2225
+    (https://github.com/named-data/ndn-tlv-ping)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Wed, 13 Aug 2014 18:44:23 -0700
+
 ndn-tlv-ping (0.1.1-ppa2~DISTRO) DISTRO; urgency=low
 
   * New version based on d957b493b6d20416e7897f97a96c310e4cde2225
