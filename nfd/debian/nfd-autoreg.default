@@ -6,8 +6,11 @@ BLACKLIST="10.0.0.0/8"
 # Whitelisted networks
 WHITELIST=""
 
-# Prefixes to register
-PREFIXES="/ndn/guest /ndn/broadcast"
+# Prefixes to register on All faces:
+ALL_FACES_PREFIXES="/ndn/broadcast"
+
+# Prefixes to register just on on-demand faces:
+ON_DEMAND_FACES_PREFIXES=""
 
 # Flags
 FLAGS=""

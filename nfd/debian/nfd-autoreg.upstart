@@ -13,7 +13,8 @@ setgid ndn
 script
   BLACKLIST=""
   WHITELIST=""
-  PREFIXES=""
+  ALL_FACES_PREFIXES=""
+  ON_DEMAND_FACES_PREFIXES=""
   FLAGS=""
   if [ -f /etc/default/nfd-autoreg ]; then
       . /etc/default/nfd-autoreg
@@ -29,11 +30,16 @@ script
     whitelist=`for i in $WHITELIST; do echo -n "-w $i "; done`
   fi
 
-  prefixes=""
-  if [ "$PREFIXES" != "" ]; then
-    prefixes=`for i in $PREFIXES; do echo -n "--prefix $i "; done`
+  all_prefixes=""
+  if [ "$ALL_FACES_PREFIXES" != "" ]; then
+    all_prefixes=`for i in $ALL_FACES_PREFIXES; do echo -n "--all-faces-prefix $i "; done`
+  fi
+
+  on_demand_prefixes=""
+  if [ "$ON_DEMAND_FACES_PREFIXES" != "" ]; then
+    on_demand_prefixes=`for i in $ON_DEMAND_FACES_PREFIXES; do echo -n "--prefix $i "; done`
   fi
 
   export HOME=/var/lib/ndn/nfd-autoreg
-  exec /usr/bin/nfd-autoreg $blacklist $whitelist $prefixes $FLAGS
+  exec /usr/bin/nfd-autoreg $blacklist $whitelist $on_demand_prefixes $all_prefixes $FLAGS
 end script
