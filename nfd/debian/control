@@ -35,3 +35,8 @@ Package: ndn-autoconfig-server
 Architecture: i386 amd64
 Depends: nfd (= ${binary:Version}), ${misc:Depends}
 Description: NDN autoconfig server
+
+Package: nfd-all
+Architecture: any
+Depends: ${misc:Depends}, nfd, nfd-status-http-server, nfd-autoreg, ndn-autoconfig-server
+Description: NFD and all related daemons
