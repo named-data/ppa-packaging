@@ -1,0 +1,23 @@
+description "NDN Autoconfig Server"
+author      "Alexander Afanasyev <alexander.afanasyev@ucla.edu>"
+
+start on started  nrd
+stop  on stopping nrd
+
+respawn
+respawn limit unlimited
+
+setuid ndn
+setgid ndn
+
+script
+  FACE_URI=""
+  if [ -f /etc/default/ndn-autoconfig-server ]; then
+      . /etc/default/ndn-autoconfig-server
+  fi
+
+  if [ "$FACE_URI != "" ]; then
+    export HOME=/var/lib/ndn/ndn-autoconfig-server
+    exec /usr/bin/ndn-autoconfig-server $FACE_URI
+  fi
+end script

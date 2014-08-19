@@ -30,3 +30,8 @@ Package: nfd-autoreg
 Architecture: i386 amd64
 Depends: nfd (= ${binary:Version}), ${misc:Depends}
 Description: NFD autoreg server
+
+Package: ndn-autoconfig-server
+Architecture: i386 amd64
+Depends: nfd (= ${binary:Version}), ${misc:Depends}
+Description: NDN autoconfig server
