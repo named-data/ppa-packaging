@@ -16,7 +16,7 @@ script
       . /etc/default/ndn-autoconfig-server
   fi
 
-  if [ "$FACE_URI != "" ]; then
+  if [ "$FACE_URI" != "" ]; then
     export HOME=/var/lib/ndn/ndn-autoconfig-server
     exec /usr/bin/ndn-autoconfig-server $FACE_URI
   fi
