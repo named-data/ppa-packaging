@@ -29,7 +29,9 @@ override_dh_auto_clean:
 override_dh_clean:
 	dh_clean
 	./waf distclean
+	rm -f VERSION
 	rm -rf .waf-1*
 	rm -f .waf-tools/*.pyc
+	rm -f docs/*.pyc
 
 override_dh_auto_test:

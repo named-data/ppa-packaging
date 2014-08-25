@@ -2,15 +2,15 @@
 GIT_URL=https://github.com/named-data/NFD.git
 
 # Tag name or commit hash for checkout
-GIT_VERSION=ad3f1cbc875b8e711526d57374dc33c60b0a91dd
+GIT_VERSION=NFD-0.2.0
 
 # Package name
 NAME=nfd
 
 # Package version
-VERSION=0.2.0~rc2.4
+VERSION=0.2.0
 
 # PPA version
-PPA_VERSION=4
+PPA_VERSION=1
 
 include ../packaging.mk
