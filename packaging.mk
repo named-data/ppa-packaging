@@ -18,6 +18,7 @@ mkdir work || true ; \
 cd work	; \
 git clone "${GIT_URL}" "${NAME}_${VERSION}" ; \
 cd "${NAME}_${VERSION}" ; \
+git fetch origin "${GIT_VERSION}"; \
 git checkout "${GIT_VERSION}" ; \
 git submodule init ; git submodule update ; \
 cd .. ; \

@@ -1,0 +1,40 @@
+chronochat (0.5.0-1-ppa1~DISTRO) DISTRO; urgency=low
+
+  * New version based on 104a738d6d38a22830e440f97885ac99f76b4044
+    (https://github.com/bruinfish/ChronoChat)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Thu, 04 Sep 2014 22:50:53 -0700
+
+chronochat (0.5.0-0-ppa1~DISTRO) DISTRO; urgency=low
+
+  * New version based on b0632285f17f99d5c4678e811425395f308225fe
+    (https://github.com/bruinfish/ChronoChat)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Thu, 04 Sep 2014 22:45:26 -0700
+
+chronochat (0.5.0~rc0-ppa3~DISTRO) DISTRO; urgency=low
+
+  * New version based on d8fc28a3f8956ac600148dfcbc3678ca562eed2a
+    (https://github.com/bruinfish/ChronoChat)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Thu, 04 Sep 2014 17:24:01 -0700
+
+chronochat (0.5.0~rc0-ppa2~DISTRO) DISTRO; urgency=low
+
+  * New version based on d8fc28a3f8956ac600148dfcbc3678ca562eed2a
+    (https://github.com/bruinfish/ChronoChat)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Thu, 04 Sep 2014 17:16:34 -0700
+
+chronochat (0.5.0~rc0-ppa1~DISTRO) DISTRO; urgency=low
+
+  * New version based on d8fc28a3f8956ac600148dfcbc3678ca562eed2a
+    (https://github.com/bruinfish/ChronoChat)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Thu, 04 Sep 2014 16:13:02 -0700
+
+chronochat (0.5.0~ppa0~DISTRO) DISTRO; urgency=low
+
+  * Initial release
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Sat, 24 May 2014 16:58:30 -0800

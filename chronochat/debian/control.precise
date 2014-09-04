@@ -1,0 +1,22 @@
+Source: chronochat
+Priority: extra
+Maintainer: Alexander Afanasyev <alexander.afanasyev@ucla.edu>
+Build-Depends: debhelper (>= 8.0.0),
+ python (>= 2.7.0),
+ pkg-config (>= 0.26),
+ ndn-cxx-dev (>= 0.2.0),
+ liblog4cxx10-dev (>= 0.10.0),
+ protobuf-compiler (>= 2.4.0),
+ libprotobuf-dev (>= 2.4.0),
+ libboost1.48-all-dev (>= 1.48.0),
+ libqt4-dev
+Standards-Version: 3.9.2
+Section: net
+Homepage: http://github.com/named-data/ChronoSync
+Vcs-Git: git://github.com/named-data/ChronoSync.git
+Vcs-Browser: http://github.com/named-data/ChronoSync
+
+Package: chronochat
+Architecture: i386 amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, ndn-cxx
+Description: A simple but interesting demo to visualize how ChronoSync library works

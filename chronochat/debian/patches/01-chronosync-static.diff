@@ -1,0 +1,17 @@
+Index: chronochat_0.5.0/ChronoSync/wscript
+===================================================================
+--- chronochat_0.5.0.orig/ChronoSync/wscript	2014-09-04 14:32:44.666470855 -0700
++++ chronochat_0.5.0/ChronoSync/wscript	2014-09-04 14:33:17.070664976 -0700
+@@ -42,10 +42,11 @@ def build(bld):
+     libsync = bld(
+         target="ChronoSync",
+         # vnum = "1.0.0",
+-        features=['cxx', 'cxxshlib'],
++        features=['cxx', 'cxxstlib'],
+         source =  bld.path.ant_glob(['src/**/*.cc', 'src/**/*.proto']),
+         use = 'BOOST NDN_CXX',
+         includes = ['src'],
++        install_path = '${LIBDIR}',
+         )
+
+     # Unit tests
