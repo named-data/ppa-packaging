@@ -12,12 +12,13 @@ setgid ndn
 
 script
   FACE_URI=""
+  ROUTABLE_PREFIXES=""
   if [ -f /etc/default/ndn-autoconfig-server ]; then
       . /etc/default/ndn-autoconfig-server
   fi
 
   if [ "$FACE_URI" != "" ]; then
     export HOME=/var/lib/ndn/ndn-autoconfig-server
-    exec /usr/bin/ndn-autoconfig-server $FACE_URI
+    exec /usr/bin/ndn-autoconfig-server $ROUTABLE_PREFIXES $FACE_URI
   fi
 end script
