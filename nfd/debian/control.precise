@@ -16,7 +16,7 @@ Vcs-Browser: http://github.com/named-data/NFD
 
 Package: nfd
 Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, ndn-cxx
+Depends: ${shlibs:Depends}, ${misc:Depends}, ndn-cxx, sudo, procps
 Description: NFD - Named Data Networking Forwarding Daemon
  NFD is a network forwarder that implements and evolves together with the Named Data
  Networking (NDN) protocol.
