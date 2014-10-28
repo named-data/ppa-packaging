@@ -2,13 +2,13 @@
 GIT_URL=https://github.com/named-data/ndn-tlv-ping
 
 # Tag name or commit hash for checkout
-GIT_VERSION=cf4d018f0fa6b6c35af7c5c40406582b2d24e789
+GIT_VERSION=38f1ea7698108bdd1cdbdd621316f020b8d0e4dc
 
 # Package name
 NAME=ndn-tlv-ping
 
 # Package version
-VERSION=0.1.2
+VERSION=0.1.3
 
 # PPA version
 PPA_VERSION=1
