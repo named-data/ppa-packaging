@@ -2,15 +2,15 @@
 GIT_URL=https://github.com/named-data/ndn-cxx.git
 
 # Tag name or commit hash for checkout
-GIT_VERSION=9ad2d7222c3bf7be7f5d7d9fcf806716d9edb5ca
+GIT_VERSION=5de006becbb60e4a8bd6492143b53b3d33c9961c
 
 # Package name
 NAME=ndn-cxx
 
 # Package version
-VERSION=0.2.0-1
+VERSION=0.3.0~rc0.0
 
 # PPA version
-PPA_VERSION=2
+PPA_VERSION=1
 
 include ../packaging.mk
