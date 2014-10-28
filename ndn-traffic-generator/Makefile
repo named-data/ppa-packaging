@@ -11,6 +11,6 @@ NAME=ndn-traffic-generator
 VERSION=0.0.1
 
 # PPA version
-PPA_VERSION=4
+PPA_VERSION=5
 
 include ../packaging.mk
