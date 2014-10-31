@@ -21,8 +21,10 @@ cd "${NAME}_${VERSION}" ; \
 git fetch origin "${GIT_VERSION}"; \
 git checkout "${GIT_VERSION}" ; \
 git submodule init ; git submodule update ; \
+(./waf version || true) ; \
+(./waf distclean || true) ; \
 cd .. ; \
-tar --exclude .git -cf - ${NAME}_${VERSION} | gzip -n9c > ${NAME}_${VERSION}.orig.tar.gz
+tar --exclude .git --exclude '*.pyc' -cf - ${NAME}_${VERSION} | gzip -n9c > ${NAME}_${VERSION}.orig.tar.gz
 
 source-build:
 	$(MAKE) _build DEBUILD="debuild -S -sa"
