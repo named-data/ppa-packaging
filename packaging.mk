@@ -53,6 +53,9 @@ for distro in ${DISTROS}; do \
   if [ -f "debian/control.$$distro" ]; then \
     mv "debian/control.$$distro" debian/control ; \
   fi ; \
+  if [ -f "debian/rules.$$distro" ]; then \
+    mv "debian/rules.$$distro" debian/rules ; \
+  fi ; \
   CUR_VER=`dpkg-parsechangelog | grep '^Version: ' | awk '{print $$2}'`; \
   if dpkg --compare-versions $$NEW_VER gt $$CUR_VER; then \
     echo "New version. Will update changelog and build source package" ; \
