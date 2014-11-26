@@ -1,0 +1,5 @@
+etc/ndns/*
+debian/ndns.conf etc/ndns/
+debian/validator.conf etc/ndns/
+debian/ndn-testbed-root.ndncert.base64 etc/ndns/anchors/
+usr/bin/*

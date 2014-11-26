@@ -1,0 +1,19 @@
+ndns (0.1.0-ppa1~DISTRO) DISTRO; urgency=low
+
+  * New version based on 870b29b1e9f615ed932503a1528d0f0b647e6621
+    (https://github.com/named-data/ndns)
+
+ -- Xiaoke Jiang <shock.jiang@gmail.com>  Thu, 27 Nov 2014 17:56:20 +0000
+
+ndns (0.0.0-ppa1~DISTRO) DISTRO; urgency=low
+
+  * New version based on 06cd214aa63b11ba90d178bf11eb80daeb665285
+    (https://github.com/named-data/ndns)
+
+ -- Xiaoke Jiang <shock.jiang@gmail.com>  Thu, 27 Nov 2014 00:05:27 +0000
+
+ndns (0.0.0~ppa0~DISTRO) DISTRO; urgency=low
+
+  * Initial release
+
+ -- Xiaoke Jiang <shock.jiang@gmail.com>  Wed, 26 Nov 2014 16:58:30 -0800
