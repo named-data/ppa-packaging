@@ -1,0 +1,21 @@
+description "Domain Name Service for Named Data Networking"
+author      "Xiaoke Jiang <shock.jiang@gmail.com>"
+
+start on started  nrd
+stop  on stopping nrd
+
+respawn
+respawn limit 10 5
+# respawn limit unlimited
+
+setuid ndns
+setgid ndns
+
+script
+  export HOME=/var/lib/ndns
+  NDNS_DAEMON_ENABLE=false
+  . /etc/default/ndns
+  if [[ $NDNS_DAEMON_ENABLE == "true" ]]; then
+    exec /usr/bin/ndns-daemon -c /etc/ndns/ndns.conf
+  fi
+end script

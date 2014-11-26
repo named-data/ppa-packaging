@@ -1,0 +1,16 @@
+#!/bin/sh -e
+
+if [ "$1" != "configure" ]; then
+        exit 0
+fi
+
+APP=ndns
+
+if [ ! -d /var/lib/ndns ]; then
+    sudo mkdir -p /var/lib/ndns
+    sudo chown -R ndns:ndns /var/lib/ndns
+fi
+
+#DEBHELPER#
+
+exit 0

@@ -1,0 +1,4 @@
+# ndns defaults
+
+# Enable ndns-daemon (disabled by default)
+# NDNS_DAEMON_ENABLE=true
