@@ -1,0 +1,13 @@
+description "Domain Name Service for Named Data Networking"
+author      "Xiaoke Jiang <shock.jiang@gmail.com>"
+
+respawn
+respawn limit unlimited
+
+setuid ndn
+setgid ndn
+
+script
+  export HOME=/var/lib/ndn/ndns
+  exec /usr/bin/ndns-daemon -c /etc/ndns/ndns.conf
+end script
