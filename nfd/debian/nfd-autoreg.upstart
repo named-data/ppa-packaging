@@ -10,6 +10,7 @@ respawn limit unlimited
 setuid ndn
 setgid ndn
 
+pre-start exec sleep 2
 script
   BLACKLIST=""
   WHITELIST=""
