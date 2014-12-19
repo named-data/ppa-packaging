@@ -15,7 +15,7 @@ script
   export HOME=/var/lib/ndns
   NDNS_DAEMON_ENABLE=false
   . /etc/default/ndns
-  if [[ $NDNS_DAEMON_ENABLE == "true" ]]; then
+  if [ "$NDNS_DAEMON_ENABLE" = "true" ]; then
     exec /usr/bin/ndns-daemon -c /etc/ndns/ndns.conf
   fi
 end script
