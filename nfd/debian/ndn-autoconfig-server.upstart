@@ -13,6 +13,7 @@ setgid ndn
 script
   FACE_URI=""
   ROUTABLE_PREFIXES=""
+  ENABLE_DAEMON=false
   if [ -f /etc/default/ndn-autoconfig-server ]; then
       . /etc/default/ndn-autoconfig-server
   fi

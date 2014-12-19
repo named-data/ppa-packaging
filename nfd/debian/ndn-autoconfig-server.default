@@ -1,5 +1,8 @@
 # ndn-autoconfig-server defaults
 
+# Enable autoconfig daemon (disabled by default)
+# ENABLE_DAEMON=true
+
 # FaceURI of NDN hub announced to hosts
 FACE_URI=""
 
