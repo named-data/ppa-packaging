@@ -2,15 +2,15 @@
 GIT_URL=https://github.com/named-data/ndndump
 
 # Tag name or commit hash for checkout
-GIT_VERSION=483aae5f92fb9beb9fd883424b3aa28bcb8ce822
+GIT_VERSION=0ce60362a285f42cf2ecbeea8cff0c7919d28d72
 
 # Package name
 NAME=ndndump
 
 # Package version
-VERSION=0.5.2
+VERSION=0.5.3
 
 # PPA version
-PPA_VERSION=2
+PPA_VERSION=4
 
 include ../packaging.mk
