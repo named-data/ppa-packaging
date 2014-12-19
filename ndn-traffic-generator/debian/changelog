@@ -1,3 +1,10 @@
+ndn-traffic-generator (0.0.2-ppa1~DISTRO) DISTRO; urgency=low
+
+  * New version based on 740812e0d83c7cfc767e4faf9bac4045ac92e1be
+    (https://github.com/named-data/ndn-traffic-generator)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Thu, 18 Dec 2014 23:26:26 -0800
+
 ndn-traffic-generator (0.0.1-ppa5~DISTRO) DISTRO; urgency=low
 
   * New version based on 976c3972c738ba027a7ada551d4204869aefcd34
