@@ -1,3 +1,10 @@
+ndns (0.0.2-ppa1~DISTRO) DISTRO; urgency=low
+
+  * New version based on 43e59b4afb264b694264d66cff616c9226c75134
+    (https://github.com/named-data/ndns)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Thu, 18 Dec 2014 23:32:32 -0800
+
 ndns (0.0.1-ppa2~DISTRO) DISTRO; urgency=low
 
   * New version based on d6b3bda24b001e9bc909188c25f45a084b8c3046
