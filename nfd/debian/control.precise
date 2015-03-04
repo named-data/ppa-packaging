@@ -23,7 +23,7 @@ Description: NFD - Named Data Networking Forwarding Daemon
 
 Package: nfd-status-http-server
 Architecture: i386 amd64
-Depends: nfd (= ${binary:Version}), ${misc:Depends}
+Depends: nfd (= ${binary:Version}), ${misc:Depends}, python2.7-minimal
 Description: NFD HTTP status server
 
 Package: nfd-autoreg
