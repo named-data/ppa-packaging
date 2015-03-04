@@ -32,3 +32,4 @@ Section: libs
 Architecture: i386 amd64
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: NDN C++ library with eXperimental eXtensions and security tools
+Conflicts: ndn.cxx-security-tools
