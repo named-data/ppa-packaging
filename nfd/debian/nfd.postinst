@@ -1,37 +1,27 @@
 #!/bin/sh -e
 
 if [ "$1" != "configure" ]; then
-        exit 0
+    exit 0
 fi
 
+# Create log folder
+mkdir -p "/var/log/ndn"
 
-if [ ! -d /var/log/ndn ]; then
-    mkdir -p /var/log/ndn
-    chown -R ndn:ndn /var/log/ndn
-fi
+# Create HOME and generate self-signed NDN certificate
+mkdir -p "/var/lib/ndn/nfd/.ndn"
 
-if [ ! -f /etc/ndn/certs/localhost_daemons_nrd.ndncert ]; then
-    # Create HOME and generate self-signed NDN certificate for nfd
-    mkdir -p /var/lib/ndn/nfd/.ndn
-    (
-        export HOME=/var/lib/ndn/nfd
-        ndnsec-keygen /localhost/daemons/nfd | ndnsec-install-cert -
-    )
+(
+    export HOME="/var/lib/ndn/nfd"
+    if [ -z "$(ndnsec-get-default)" ]; then
+        ndnsec-keygen "/localhost/daemons/nfd" | ndnsec-install-cert -
+    fi
 
-    # Create HOME and generate self-signed NDN certificate for nrd
-    # Dump RIB Management daemon's certificate
-    mkdir -p /var/lib/ndn/nrd/.ndn
-    (
-         export HOME=/var/lib/ndn/nrd
-         ndnsec-keygen /localhost/daemons/nrd | ndnsec-install-cert -
+    mkdir -p "/etc/ndn/certs"
+    ndnsec-dump-certificate -i "$(ndnsec-get-default)" > \
+        "/etc/ndn/certs/localhost_daemons_nfd.ndncert"
+)
 
-         mkdir /etc/ndn/certs
-         ndnsec-dump-certificate -i /localhost/daemons/nrd > \
-           /etc/ndn/certs/localhost_daemons_nrd.ndncert
-    )
-fi
-
-chown -R ndn:ndn /var/lib/ndn
+chown -R ndn:ndn "/var/lib/ndn/nfd"
 
 #DEBHELPER#
 

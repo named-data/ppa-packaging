@@ -11,6 +11,6 @@ NAME=nfd
 VERSION=0.3.1
 
 # PPA version
-PPA_VERSION=2
+PPA_VERSION=3
 
 include ../packaging.mk

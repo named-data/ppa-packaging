@@ -3,13 +3,13 @@ Upstream-Name: nfd
 Source: http://github.com/named-data/NFD
 
 Files: *
-Copyright: Copyright (c) 2014, Regents of the University of California,
-                               Arizona Board of Regents,
-                               Colorado State University,
-                               University Pierre & Marie Curie, Sorbonne University,
-                               Washington University in St. Louis,
-                               Beijing Institute of Technology,
-                               The University of Memphis
+Copyright: Copyright (c) 2014-2015, Regents of the University of California,
+                                    Arizona Board of Regents,
+                                    Colorado State University,
+                                    University Pierre & Marie Curie, Sorbonne University,
+                                    Washington University in St. Louis,
+                                    Beijing Institute of Technology,
+                                    The University of Memphis.
 License: GPL-3+
  NFD is free software: you can redistribute it and/or modify it under the terms
  of the GNU General Public License as published by the Free Software Foundation,
@@ -24,7 +24,7 @@ License: GPL-3+
 
 
 Files: debian/*
-Copyright: Copyright (c) 2013-2014, Alexander Afanasyev <alexander.afanasyev@ucla.edu>
+Copyright: Copyright (c) 2013-2015, Alexander Afanasyev <alexander.afanasyev@ucla.edu>
 License: BSD
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions are met:
