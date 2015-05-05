@@ -2,7 +2,7 @@
 PPA=ppa:named-data/ppa-dev
 
 # List of target distributions
-DISTROS=precise trusty utopic
+DISTROS=precise trusty vivid
 
 DEBUILD=debuild -S
 
