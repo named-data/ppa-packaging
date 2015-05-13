@@ -2,15 +2,15 @@
 GIT_URL=https://github.com/named-data/repo-ng
 
 # Tag name or commit hash for checkout
-GIT_VERSION=595b2bd4020e8c43baf54396eb2c08e1e26fe1ce
+GIT_VERSION=a79c778ae133c92ea691951877db81ee0a7b26c9
 
 # Package name
 NAME=repo-ng
 
 # Package version
-VERSION=0.0.6
+VERSION=0.0.7
 
 # PPA version
-PPA_VERSION=3
+PPA_VERSION=2
 
 include ../packaging.mk
