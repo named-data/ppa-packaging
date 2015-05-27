@@ -50,12 +50,11 @@ for distro in ${DISTROS}; do \
   NEW_VER="${VERSION}-ppa${PPA_VERSION}~$$distro"; \
   rm -Rf debian ; cp -r ../../debian . ; \
   sed -i -e "s/DISTRO/$$distro/g" debian/changelog ; \
-  if [ -f "debian/control.$$distro" ]; then \
-    mv "debian/control.$$distro" debian/control ; \
-  fi ; \
-  if [ -f "debian/rules.$$distro" ]; then \
-    mv "debian/rules.$$distro" debian/rules ; \
-  fi ; \
+  for file in debian/*.$$distro; do \
+    if [ -f $$file ]; then \
+      rename -f "s/\.$$distro$$//" $$file ; \
+    fi ; \
+  done ; \
   CUR_VER=`dpkg-parsechangelog | grep '^Version: ' | awk '{print $$2}'`; \
   if dpkg --compare-versions $$NEW_VER gt $$CUR_VER; then \
     echo "New version. Will update changelog and build source package" ; \
