@@ -14,7 +14,7 @@ CXXFLAGS := $(shell dpkg-buildflags --get CXXFLAGS)
 CXXFLAGS += -std=c++11
 
 %:
-	dh $@ --parallel
+	dh $@ --parallel --with=systemd
 
 override_dh_auto_configure:
 	CXXFLAGS="$(CXXFLAGS)" ./waf configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var
@@ -37,7 +37,14 @@ override_dh_clean:
 
 override_dh_auto_test:
 
-override_dh_installinit:
-	dh_installinit
-	dh_installinit --name=nrd
-	dh_installinit --name=nfd-restart
+override_dh_systemd_enable:
+	dh_systemd_enable -pnfd
+	dh_systemd_enable -pnfd-status-http-server
+	dh_systemd_enable -pndn-autoconfig-server --no-enable
+	dh_systemd_enable -pnfd-autoreg --no-enable
+
+override_dh_systemd_start:
+	dh_systemd_start -pnfd
+	dh_systemd_start -pnfd-status-http-server
+	dh_systemd_start -pndn-autoconfig-server --no-start
+	dh_systemd_start -pnfd-autoreg --no-start

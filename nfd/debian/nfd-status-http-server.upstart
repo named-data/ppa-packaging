@@ -1,4 +1,4 @@
-description "NDN HTTP Status Server"
+description "NFD HTTP Status Server"
 author      "Alexander Afanasyev <alexander.afanasyev@ucla.edu>"
 
 start on started  nfd

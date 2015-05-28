@@ -1,15 +1,19 @@
 # nfd-autoreg defaults
 
 # Blacklisted networks
-BLACKLIST="10.0.0.0/8"
+# Format: "-b NET1 -b NET2 ..."
+BLACKLIST="-b 10.0.0.0/8"
 
 # Whitelisted networks
+# Format: "-w NET1 -w NET2 ..."
 WHITELIST=""
 
 # Prefixes to register on All faces:
-ALL_FACES_PREFIXES="/ndn/broadcast"
+# Format: "--all-faces-prefix /prefix/1 --all-faces-prefix /prefix/2 ..."
+ALL_FACES_PREFIXES="--all-faces-prefix /ndn/broadcast"
 
 # Prefixes to register just on on-demand faces:
+# Format: "--prefix /prefix/1 --prefix /prefix/2 ..."
 ON_DEMAND_FACES_PREFIXES=""
 
 # Flags

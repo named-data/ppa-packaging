@@ -30,7 +30,7 @@ source-build:
 	$(MAKE) _build DEBUILD="debuild -S -sa"
 
 build:
-	$(MAKE) _build DEBUILD=debuild DISTROS=trusty
+	$(MAKE) _build DEBUILD=debuild
 
 install: build
 	sudo dpkg -i work/*.deb

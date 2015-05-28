@@ -11,7 +11,7 @@
 
 LDFLAGS := $(shell dpkg-buildflags --get LDFLAGS)
 CXXFLAGS := $(shell dpkg-buildflags --get CXXFLAGS)
-CXXFLAGS += -std=c++0x
+CXXFLAGS += -std=c++11
 
 %:
 	dh $@ --parallel

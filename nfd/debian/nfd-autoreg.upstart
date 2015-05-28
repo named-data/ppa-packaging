@@ -20,26 +20,6 @@ script
       . /etc/default/nfd-autoreg
   fi
 
-  blacklist=""
-  if [ "$BLACKLIST" != "" ]; then
-    blacklist=`for i in $BLACKLIST; do echo -n "-b $i "; done`
-  fi
-
-  whitelist=""
-  if [ "$WHITELIST" != "" ]; then
-    whitelist=`for i in $WHITELIST; do echo -n "-w $i "; done`
-  fi
-
-  all_prefixes=""
-  if [ "$ALL_FACES_PREFIXES" != "" ]; then
-    all_prefixes=`for i in $ALL_FACES_PREFIXES; do echo -n "--all-faces-prefix $i "; done`
-  fi
-
-  on_demand_prefixes=""
-  if [ "$ON_DEMAND_FACES_PREFIXES" != "" ]; then
-    on_demand_prefixes=`for i in $ON_DEMAND_FACES_PREFIXES; do echo -n "--prefix $i "; done`
-  fi
-
   export HOME=/var/lib/ndn/nfd-autoreg
-  exec /usr/bin/nfd-autoreg $blacklist $whitelist $on_demand_prefixes $all_prefixes $FLAGS
+  exec /usr/bin/nfd-autoreg $BLACKLIST $WHITELIST $ON_DEMAND_FACES_PREFIXES $ALL_FACES_PREFIXES $FLAGS
 end script
