@@ -1,7 +1,8 @@
 Source: nlsr
 Priority: extra
-Maintainer: A K M Mahmudul Hoque <ahoque1@memphis.edu>
+Maintainer: Vince Lehman <vslehman@memphis.edu>
 Build-Depends: debhelper (>= 8.0.0),
+ dh-systemd (>= 1.5),
  python (>= 2.7.0),
  pkg-config (>= 0.26),
  ndn-cxx-dev (>= 0.3.0~rc0.2),

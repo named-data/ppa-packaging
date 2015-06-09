@@ -1,6 +1,6 @@
 Source: nlsr
 Priority: extra
-Maintainer: A K M Mahmudul Hoque <ahoque1@memphis.edu>
+Maintainer: Vince Lehman <vslehman@memphis.edu>
 Build-Depends: debhelper (>= 8.0.0),
  python (>= 2.7.0),
  pkg-config (>= 0.26),
@@ -20,4 +20,4 @@ Vcs-Browser: http://github.com/named-data/NLSR
 Package: nlsr
 Architecture: i386 amd64
 Depends: ${shlibs:Depends}, ${misc:Depends} , ndn-cxx
-Description: A link state routing protocol for Named Data Networking 
+Description: A link state routing protocol for Named Data Networking
