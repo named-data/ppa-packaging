@@ -14,7 +14,7 @@ CXXFLAGS := $(shell dpkg-buildflags --get CXXFLAGS)
 CXXFLAGS += -std=c++11
 
 %:
-	dh $@ --parallel
+	dh $@ --parallel --with=systemd
 
 override_dh_auto_configure:
 	LDFLAGS="${LDFLAGS}" CXXFLAGS="$(CXXFLAGS)" ./waf configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var/lib
@@ -37,3 +37,10 @@ override_dh_clean:
 	rm -f docs/*.pyc
 
 override_dh_auto_test:
+
+override_dh_systemd_enable:
+	dh_systemd_enable --no-enable
+
+override_dh_systemd_start:
+	dh_systemd_start --no-start
+
