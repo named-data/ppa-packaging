@@ -1,0 +1,37 @@
+# Copyright (c) 2015,  Arizona Board of Regents.
+#
+# This file is part of NDN repo-ng (Next generation of NDN repository).
+# See AUTHORS.md for complete list of repo-ng authors and contributors.
+#
+# repo-ng is free software: you can redistribute it and/or modify it under the terms
+# of the GNU General Public License as published by the Free Software Foundation,
+# either version 3 of the License, or (at your option) any later version.
+#
+# repo-ng is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+# without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+# PURPOSE.  See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# repo-ng, e.g., in COPYING.md file.  If not, see <http://www.gnu.org/licenses/>.
+#
+# Author: Eric Newberry <enewberry@email.arizona.edu>
+
+[Unit]
+Description=New generation of NDN repo
+Documentation=man:ndn-repo-ng
+Requires=nfd.service
+After=nfd.service
+
+[Service]
+Environment=HOME=/var/lib/ndn/repo-ng
+User=ndn
+Group=ndn
+ExecStart=/usr/bin/ndn-repo-ng -c /etc/ndn/repo-ng.conf
+Restart=on-failure
+ProtectSystem=full
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectHome=yes
+
+[Install]
+WantedBy=multi-user.target
