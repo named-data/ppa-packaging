@@ -17,7 +17,7 @@ CXXFLAGS += -std=c++0x
 	dh $@ --parallel
 
 override_dh_auto_configure:
-	./waf configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var
+	./waf configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --disable-static --enable-shared
 
 override_dh_auto_build:
 	./waf build
