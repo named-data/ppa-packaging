@@ -1,3 +1,15 @@
+nlsr (0.2.1-ppa4~DISTRO) DISTRO; urgency=low
+
+  * New version based on NLSR-0.2.1 (https://github.com/named-data/NLSR)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Wed, 22 Jul 2015 06:08:45 +0000
+
+nlsr (0.2.1-ppa3~DISTRO) DISTRO; urgency=low
+
+  * New version based on NLSR-0.2.1 (https://github.com/named-data/NLSR)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Wed, 22 Jul 2015 05:29:05 +0000
+
 nlsr (0.2.1-ppa2~DISTRO) DISTRO; urgency=low
 
   * New version based on NLSR-0.2.1 (https://github.com/named-data/NLSR)
