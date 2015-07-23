@@ -28,6 +28,11 @@ Architecture: i386 amd64
 Depends: ${shlibs:Depends}, ${misc:Depends}, ndn-cxx, nfd
 Description: Reachability testing tools for Named Data Networking.
 
+Package: ndn-tlv-ping
+Architecture: i386 amd64
+Depends: ndnping
+Description: deprecated package, use ndnping instead
+
 Package: ndnpeek
 Architecture: i386 amd64
 Depends: ${shlibs:Depends}, ${misc:Depends}, ndn-cxx
