@@ -5,8 +5,8 @@
 description "NDN NLSR Routing Daemon"
 author      "John DeHart <jdd@wustl.edu>"
 
-start on started  nrd
-stop  on stopping nrd
+start on started  nfd
+stop  on stopping nfd
 
 respawn
 respawn limit unlimited

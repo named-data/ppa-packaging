@@ -1,8 +1,8 @@
 description "NFD Autoreg Server"
 author      "Alexander Afanasyev <alexander.afanasyev@ucla.edu>"
 
-start on started  nrd
-stop  on stopping nrd
+start on started  nfd
+stop  on stopping nfd
 
 respawn
 respawn limit unlimited
