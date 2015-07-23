@@ -1,0 +1,43 @@
+Source: ndn-tools
+Priority: extra
+Maintainer: Alexander Afanasyev <alexander.afanasyev@ucla.edu>
+Build-Depends: debhelper (>= 8.0.0),
+ dh-systemd (>= 1.5),
+ python (>= 2.7.0),
+ pkg-config (>= 0.26),
+ libpcap-dev,
+ ndn-cxx-dev (>= 0.3.3)
+Standards-Version: 3.9.2
+Section: net
+Homepage: http://github.com/named-data/ndn-tools
+Vcs-Git: git://github.com/named-data/ndn-tools.git
+Vcs-Browser: http://github.com/named-data/ndn-tools
+
+Package: ndn-tools
+Architecture: i386 amd64
+Depends: ndndump, ndnping, ndnpeek, ndn-dissect
+
+Package: ndndump
+Architecture: i386 amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, ndn-cxx
+Description: A traffic analysis tool that captures Interest and Data packets
+ on the wire, and displays brief information about captured packets.
+
+Package: ndnping
+Architecture: i386 amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, ndn-cxx, nfd
+Description: Reachability testing tools for Named Data Networking.
+
+Package: ndnpeek
+Architecture: i386 amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, ndn-cxx
+Description: ndnpeek and ndnpoke are a pair of programs to request and make available
+ for retrieval of a single Data packet.
+
+Package: ndn-dissect
+Architecture: i386 amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, ndn-cxx
+Description: An NDN packet format inspector. It reads zero or more NDN packets from either
+ an input file or the standard input, and displays the Type-Length-Value (TLV) structure
+ of those packets on the standard output.
+

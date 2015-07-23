@@ -1,0 +1,6 @@
+# defaults for ndnping server
+
+# Prefix should be set to a valid value
+PREFIX="/localhost/ndnpingserver"
+
+FLAGS=""

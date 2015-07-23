@@ -1,0 +1,5 @@
+ndn-tools (0.0.0~ppa0~DISTRO) DISTRO; urgency=low
+
+  * Initial release
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Wed, 22 Jul 2015 15:58:30 -0800

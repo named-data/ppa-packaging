@@ -1,0 +1,24 @@
+# Authors:
+# - Eric Newberry <enewberry@email.arizona.edu>
+# - Alexander Afanasyev <http://lasr.cs.ucla.edu/afanasyev/index.html>
+
+[Unit]
+Description=Reachability testing server for Named Data Networking.
+Documentation=man:ndnpingserver
+Requires=nfd.service
+After=nfd.service
+
+[Service]
+Environment=HOME=/var/lib/ndn/ndnping
+EnvironmentFile=-/etc/default/ndnping
+User=ndn
+Group=ndn
+ExecStart=/usr/bin/ndnpingserver "$PREFIX" $FLAGS
+Restart=on-failure
+ProtectSystem=full
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectHome=yes
+
+[Install]
+WantedBy=multi-user.target
