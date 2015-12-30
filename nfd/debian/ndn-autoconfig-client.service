@@ -19,21 +19,17 @@
 #
 # You should have received a copy of the GNU General Public License along with
 # NFD, e.g., in COPYING.md file.  If not, see <http://www.gnu.org/licenses/>.
-#
-# Author: Eric Newberry <enewberry@email.arizona.edu>
 
 [Unit]
-Description=NDN Autoconfig Server
-Documentation=man:nfd-autoconfig-server
+Description=NDN Autoconfig Client
+Documentation=man:nfd-autoconfig
 Requires=nfd.service
 After=nfd.service
 
 [Service]
-Environment=HOME=/var/lib/ndn/ndn-autoconfig-server
-EnvironmentFile=-/etc/default/ndn-autoconfig-server
 User=ndn
 Group=ndn
-ExecStart=/bin/sh -ec 'if [ "$FACE_URI" != "" ]; then exec /usr/bin/ndn-autoconfig-server $ROUTABLE_PREFIXES $FACE_URI; fi'
+ExecStart=/usr/bin/ndn-autoconfig -d -c /etc/ndn/autoconfig.conf
 Restart=on-failure
 ProtectSystem=full
 PrivateTmp=yes

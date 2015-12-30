@@ -4,7 +4,7 @@ Maintainer: Alexander Afanasyev <alexander.afanasyev@ucla.edu>
 Build-Depends: debhelper (>= 8.0.0),
  python (>= 2.7.0),
  pkg-config (>= 0.26),
- ndn-cxx-dev (>= 0.3.0~rc0.2),
+ ndn-cxx-dev (>= 0.4.0),
  python-sphinx,
  libpcap-dev,
  libboost1.48-all-dev (>= 1.48.0)
@@ -36,7 +36,12 @@ Architecture: i386 amd64
 Depends: nfd (= ${binary:Version}), ${misc:Depends}
 Description: NDN autoconfig server
 
+Package: ndn-autoconfig-client
+Architecture: i386 amd64
+Depends: nfd (= ${binary:Version}), ${misc:Depends}
+Description: NDN autoconfig client
+
 Package: nfd-all
 Architecture: any
-Depends: ${misc:Depends}, nfd, nfd-status-http-server, nfd-autoreg, ndn-autoconfig-server
+Depends: ${misc:Depends}, nfd, nfd-status-http-server, nfd-autoreg, ndn-autoconfig-server, ndn-autoconfig-client
 Description: NFD and all related daemons

@@ -1,0 +1,7 @@
+etc/ndn/autoconfig.conf.sample
+debian/autoconfig.conf etc/ndn
+
+usr/bin/ndn-autoconfig
+
+usr/share/man/man1/ndn-autoconfig.1
+usr/share/man/man5/ndn-autoconfig.conf.5

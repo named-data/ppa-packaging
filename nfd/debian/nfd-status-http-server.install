@@ -1,0 +1,10 @@
+usr/bin/nfd-status-http-server
+
+usr/share/man/man1/nfd-status-http-server.1
+
+usr/share/ndn/nfd-status.xsl
+usr/share/ndn/reset.css
+usr/share/ndn/robots.txt
+usr/share/ndn/style.css
+usr/share/ndn/text.css
+

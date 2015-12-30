@@ -1,6 +1,13 @@
-etc/ndn/*
-usr/bin/*
-usr/share/*
+etc/ndn/nfd.conf.sample
+
+usr/bin/nfd
+usr/bin/nfd-status
+usr/bin/nfdc
+
+usr/share/man/man1/nfd-status.1
+usr/share/man/man1/nfd.1
+usr/share/man/man1/nfdc.1
+
 debian/nfd-start usr/bin/
 debian/nfd-stop  usr/bin/
 debian/nfd.conf etc/ndn/

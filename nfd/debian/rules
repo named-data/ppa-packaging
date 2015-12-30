@@ -41,10 +41,12 @@ override_dh_systemd_enable:
 	dh_systemd_enable -pnfd
 	dh_systemd_enable -pnfd-status-http-server
 	dh_systemd_enable -pndn-autoconfig-server --no-enable
+	dh_systemd_enable -pndn-autoconfig-client --no-enable
 	dh_systemd_enable -pnfd-autoreg --no-enable
 
 override_dh_systemd_start:
 	dh_systemd_start -pnfd
 	dh_systemd_start -pnfd-status-http-server
 	dh_systemd_start -pndn-autoconfig-server --no-start
+	dh_systemd_start -pndn-autoconfig-client --no-start
 	dh_systemd_start -pnfd-autoreg --no-start
