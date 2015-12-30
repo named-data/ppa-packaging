@@ -1,3 +1,17 @@
+ndn-tools (0.2-3-g3e79c9c-ppa2~DISTRO) DISTRO; urgency=low
+
+  * New version based on 3e79c9cda4782ef81dcab9d596df53922b254fda
+    (https://github.com/named-data/ndn-tools)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Thu, 07 Jan 2016 20:16:19 +0000
+
+ndn-tools (0.2-2-ge02fb52-ppa1~DISTRO) DISTRO; urgency=low
+
+  * New version based on e02fb5209092559d5fe00cb19bd8382f1c6b4329
+    (https://github.com/named-data/ndn-tools)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Mon, 26 Oct 2015 18:31:16 +0000
+
 ndn-tools (0.2-ppa6~DISTRO) DISTRO; urgency=low
 
   * New version based on ndn-tools-0.2 (https://github.com/named-

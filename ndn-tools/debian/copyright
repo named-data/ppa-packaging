@@ -1,9 +1,15 @@
 Format: http://dep.debian.net/deps/dep5
-Upstream-Name: ndndump
-Source: http://github.com/named-data/ndndump
+Upstream-Name: ndn-tools
+Source: http://github.com/named-data/ndn-tools
 
 Files: *
-Copyright: Copyright (c) 2011-2014, Regents of the University of California.
+Copyright: Copyright (c) 2014-2015, Regents of the University of California,
+                                    Arizona Board of Regents,
+                                    Colorado State University,
+                                    University Pierre & Marie Curie, Sorbonne University,
+                                    Washington University in St. Louis,
+                                    Beijing Institute of Technology,
+                                    The University of Memphis.
 License: GPL-3+
  ndndump is free software: you can redistribute it and/or modify it under the terms
  of the GNU General Public License as published by the Free Software Foundation,
