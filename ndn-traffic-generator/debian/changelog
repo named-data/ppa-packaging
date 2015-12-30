@@ -1,3 +1,24 @@
+ndn-traffic-generator (0.0.5-gef561-ppa2~DISTRO) DISTRO; urgency=low
+
+  * New version based on ef56143e6ff73d935499c6c4708bf124aff40407
+    (https://github.com/named-data/ndn-traffic-generator)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Thu, 07 Jan 2016 20:21:38 +0000
+
+ndn-traffic-generator (0.0.5-gef561-ppa1~DISTRO) DISTRO; urgency=low
+
+  * New version based on ef56143e6ff73d935499c6c4708bf124aff40407
+    (https://github.com/named-data/ndn-traffic-generator)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Wed, 30 Dec 2015 23:02:12 +0000
+
+ndn-traffic-generator (0.0.4-g3b284-ppa2~DISTRO) DISTRO; urgency=low
+
+  * New version based on 3b2841967d702298239c81e5e3393119e0dd54c4
+    (https://github.com/named-data/ndn-traffic-generator)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Mon, 26 Oct 2015 18:32:31 +0000
+
 ndn-traffic-generator (0.0.4-g3b284-ppa1~DISTRO) DISTRO; urgency=low
 
   * New version based on 3b2841967d702298239c81e5e3393119e0dd54c4
