@@ -11,6 +11,6 @@ NAME=ndn-cxx
 VERSION=0.4.0
 
 # PPA version
-PPA_VERSION=1
+PPA_VERSION=2
 
 include ../packaging.mk

@@ -33,3 +33,12 @@ Architecture: i386 amd64
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: NDN C++ library with eXperimental eXtensions and security tools
 Conflicts: ndn.cxx-security-tools
+
+Package: ndn-cxx-dbg
+Architecture: any
+Section: debug
+Priority: extra
+Depends:
+ ndn-cxx (= ${binary:Version}),
+ ${misc:Depends}
+Description: debugging symbols for ndn-cxx
