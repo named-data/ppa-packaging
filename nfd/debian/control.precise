@@ -45,3 +45,12 @@ Package: nfd-all
 Architecture: any
 Depends: ${misc:Depends}, nfd, nfd-status-http-server, nfd-autoreg, ndn-autoconfig-server, ndn-autoconfig-client
 Description: NFD and all related daemons
+
+Package: nfd-dbg
+Architecture: any
+Section: debug
+Priority: extra
+Depends:
+ nfd (= ${binary:Version}),
+ ${misc:Depends}
+Description: debugging symbols for nfd

@@ -50,3 +50,7 @@ override_dh_systemd_start:
 	dh_systemd_start -pndn-autoconfig-server --no-start
 	dh_systemd_start -pndn-autoconfig-client --no-start
 	dh_systemd_start -pnfd-autoreg --no-start
+
+.PHONY: override_dh_strip
+override_dh_strip:
+	dh_strip --dbg-package=nfd-dbg
