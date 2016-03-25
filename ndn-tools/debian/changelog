@@ -1,3 +1,10 @@
+ndn-tools (0.3-ppa1~DISTRO) DISTRO; urgency=low
+
+  * New version based on ndn-tools-0.3 (https://github.com/named-
+    data/ndn-tools)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Fri, 25 Mar 2016 21:29:56 +0000
+
 ndn-tools (0.2-3-g3e79c9c-ppa2~DISTRO) DISTRO; urgency=low
 
   * New version based on 3e79c9cda4782ef81dcab9d596df53922b254fda
