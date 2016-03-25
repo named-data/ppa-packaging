@@ -4,7 +4,7 @@ Maintainer: Alexander Afanasyev <alexander.afanasyev@ucla.edu>
 Build-Depends: debhelper (>= 8.0.0),
  python (>= 2.7.0),
  pkg-config (>= 0.26),
- ndn-cxx-dev (>= 0.4.0),
+ ndn-cxx-dev (>= 0.4.1),
  python-sphinx,
  libpcap-dev,
  libboost1.48-all-dev (>= 1.48.0)
