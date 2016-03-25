@@ -1,3 +1,10 @@
+nlsr (0.2.2-2-gaf909fc-ppa1~DISTRO) DISTRO; urgency=low
+
+  * New version based on af909fcc138ce18bd433edecc248ed2b60fc9737
+    (https://github.com/named-data/NLSR)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Fri, 25 Mar 2016 21:36:50 +0000
+
 nlsr (0.2.2-ppa1~DISTRO) DISTRO; urgency=low
 
   * New version based on NLSR-0.2.2 (https://github.com/named-data/NLSR)
