@@ -1,3 +1,10 @@
+nfd (0.4.1-1-g704430c-ppa1~DISTRO) DISTRO; urgency=low
+
+  * New version based on 704430ca07bda92019538b92379c276529efa04a
+    (https://github.com/named-data/NFD.git)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Tue, 03 May 2016 19:27:00 +0000
+
 nfd (0.4.1-ppa1~DISTRO) DISTRO; urgency=low
 
   * New version based on NFD-0.4.1 (https://github.com/named-
