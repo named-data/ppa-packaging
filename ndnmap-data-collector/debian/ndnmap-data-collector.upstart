@@ -1,0 +1,21 @@
+description "New NDN XML Status client"
+author      "John DeHart <jdd@wustl.edu>"
+
+start on started  nfd
+stop  on stopping nfd
+
+respawn
+respawn limit unlimited
+
+setuid ndn
+setgid ndn
+
+script
+    FLAGS=""
+    PREFIX=""
+    if [ -f /etc/default/ndnmapDataCollectorClient  ]; then
+        . /etc/default/ndnmapDataCollectorClient
+    fi
+    export HOME=/var/lib/ndn/ndnmapDataCollector
+    exec /usr/bin/ndnmapDataCollectorClient $FLAGS -p $PREFIX
+end script

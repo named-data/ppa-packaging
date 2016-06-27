@@ -1,0 +1,19 @@
+Source: ndnmap-data-collector
+Priority: extra
+Maintainer: John DeHart <jdd@wustl.edu>
+Build-Depends: debhelper (>= 8.0.0),
+ python (>= 2.7.0),
+ pkg-config (>= 0.26),
+ ndn-cxx-dev (>= 0.4.1)
+Standards-Version: 3.9.2
+Section: net
+Homepage: http://github.com/WU-ARL/ndnmapDataCollector
+Vcs-Git: git://github.com/WU-ARL/ndnmapDataCollector.git
+Vcs-Browser: http://github.com/WU-ARL/ndnmapDataCollector
+
+Package: ndnmap-data-collector
+Architecture: i386 amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, ndn-cxx
+Description: Data collector daemons for ndnmap.arl.wustl.edu
+ This tool is designed to generate ndn interests to each NDN Testbed node
+ to collect link usage data for display on the ndnmap.arl.wustl.edu web page.

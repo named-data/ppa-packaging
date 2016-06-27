@@ -1,0 +1,6 @@
+# defaults for ndnmapDataCollector client
+
+# Local Prefix for Interests
+PREFIX="/ndn/edu/wustl/ndnmap/stats"
+
+FLAGS=""

@@ -1,0 +1,14 @@
+#!/bin/sh -e
+
+if [ "$1" != "configure" ]; then
+    exit 0
+fi
+
+# Create HOME and generate self-signed NDN certificate
+mkdir -p "/var/lib/ndn/ndnmapDataCollector/.ndn"
+
+chown -R ndn:ndn "/var/lib/ndn/ndnmapDataCollector"
+
+#DEBHELPER#
+
+exit 0

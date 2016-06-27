@@ -1,0 +1,23 @@
+# Authors:
+# - John DeHart <jdd@wustl.edu>
+
+[Unit]
+Description=Data collection daemons for ndnmap.
+Documentation=man:ndnmapDataCollector
+Requires=nfd.service
+After=nfd.service
+
+[Service]
+Environment=HOME=/var/lib/ndn/ndnmapDataCollector
+EnvironmentFile=-/etc/default/ndnmapDataCollectorClient
+User=ndn
+Group=ndn
+ExecStart=/usr/bin/ndnmapDataCollectorClient $FLAGS -p "$PREFIX"
+Restart=on-failure
+ProtectSystem=full
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectHome=yes
+
+[Install]
+WantedBy=multi-user.target
