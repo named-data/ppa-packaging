@@ -9,7 +9,7 @@ After=nfd.service
 
 [Service]
 Environment=HOME=/var/lib/ndn/ndnmapDataCollector
-EnvironmentFile=-/etc/default/ndnmapDataCollectorClient
+EnvironmentFile=-/etc/default/ndnmap-data-collector
 User=ndn
 Group=ndn
 ExecStart=/usr/bin/ndnmapDataCollectorClient $FLAGS -p "$PREFIX"

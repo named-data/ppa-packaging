@@ -13,8 +13,8 @@ setgid ndn
 script
     FLAGS=""
     PREFIX=""
-    if [ -f /etc/default/ndnmapDataCollectorClient  ]; then
-        . /etc/default/ndnmapDataCollectorClient
+    if [ -f /etc/default/ndnmap-data-collector  ]; then
+        . /etc/default/ndnmap-data-collector
     fi
     export HOME=/var/lib/ndn/ndnmapDataCollector
     exec /usr/bin/ndnmapDataCollectorClient $FLAGS -p $PREFIX
