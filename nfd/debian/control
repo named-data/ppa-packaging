@@ -5,10 +5,10 @@ Build-Depends: debhelper (>= 8.0.0),
  dh-systemd (>= 1.5),
  python (>= 2.7.0),
  pkg-config (>= 0.26),
- ndn-cxx-dev (>= 0.4.1),
+ ndn-cxx-dev (>= 0.5.0),
  python-sphinx,
  libpcap-dev,
- libboost-all-dev (>= 1.48.0)
+ libboost-all-dev (>= 1.53.0)
 Standards-Version: 3.9.2
 Section: net
 Homepage: http://named-data.net/doc/NFD/
