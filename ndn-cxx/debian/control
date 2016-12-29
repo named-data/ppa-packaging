@@ -17,7 +17,7 @@ Vcs-Browser: http://github.com/named-data/ndn-cxx
 
 Package: ndn-cxx-dev
 Section: libdevel
-Architecture: i386 amd64
+Architecture: i386 amd64 arm64 armel armhf ppc64el
 Depends: python (>= 2.7.0),
  pkg-config (>= 0.26),
  libssl-dev (>=1.0.1),
@@ -29,7 +29,7 @@ Description: Development headers and libraries of NDN C++ library with eXperimen
 
 Package: ndn-cxx
 Section: libs
-Architecture: i386 amd64
+Architecture: i386 amd64 arm64 armel armhf ppc64el
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: NDN C++ library with eXperimental eXtensions and security tools
 Conflicts: ndn.cxx-security-tools
