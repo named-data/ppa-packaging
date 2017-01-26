@@ -28,6 +28,7 @@ Documentation=man:nfd-status-http-server
 After=nfd.service
 
 [Service]
+Environment=HOME=/var/lib/ndn/nfd-status-http-server
 EnvironmentFile=-/etc/default/nfd-status-http-server
 ExecStart=/usr/bin/nfd-status-http-server $FLAGS
 Restart=on-failure

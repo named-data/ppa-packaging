@@ -5,7 +5,7 @@ Build-Depends: debhelper (>= 8.0.0),
  dh-systemd (>= 1.5),
  python (>= 2.7.0),
  pkg-config (>= 0.26),
- ndn-cxx-dev (>= 0.5.0),
+ ndn-cxx-dev (>= 0.5.1),
  python-sphinx,
  libpcap-dev,
  libboost-all-dev (>= 1.53.0)
@@ -16,29 +16,29 @@ Vcs-Git: git://github.com/named-data/NFD.git
 Vcs-Browser: http://github.com/named-data/NFD
 
 Package: nfd
-Architecture: i386 amd64
+Architecture: i386 amd64 arm64 armel armhf ppc64el
 Depends: ${shlibs:Depends}, ${misc:Depends}, ndn-cxx, sudo, procps
 Description: NFD - Named Data Networking Forwarding Daemon
  NFD is a network forwarder that implements and evolves together with the Named Data
  Networking (NDN) protocol.
 
 Package: nfd-status-http-server
-Architecture: i386 amd64
+Architecture: i386 amd64 arm64 armel armhf ppc64el
 Depends: nfd (= ${binary:Version}), ${misc:Depends}, python2.7-minimal
 Description: NFD HTTP status server
 
 Package: nfd-autoreg
-Architecture: i386 amd64
+Architecture: i386 amd64 arm64 armel armhf ppc64el
 Depends: nfd (= ${binary:Version}), ${misc:Depends}
 Description: NFD autoreg server
 
 Package: ndn-autoconfig-server
-Architecture: i386 amd64
+Architecture: i386 amd64 arm64 armel armhf ppc64el
 Depends: nfd (= ${binary:Version}), ${misc:Depends}
 Description: NDN autoconfig server
 
 Package: ndn-autoconfig-client
-Architecture: i386 amd64
+Architecture: i386 amd64 arm64 armel armhf ppc64el
 Depends: nfd (= ${binary:Version}), ${misc:Depends}
 Description: NDN autoconfig client
 
