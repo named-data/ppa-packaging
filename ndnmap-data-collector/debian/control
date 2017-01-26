@@ -13,7 +13,7 @@ Vcs-Git: git://github.com/WU-ARL/ndnmapDataCollector.git
 Vcs-Browser: http://github.com/WU-ARL/ndnmapDataCollector
 
 Package: ndnmap-data-collector
-Architecture: i386 amd64
+Architecture: i386 amd64 arm64 armel armhf ppc64el
 Depends: ${shlibs:Depends}, ${misc:Depends}, ndn-cxx
 Description: Data collector daemons for ndnmap.arl.wustl.edu
  This tool is designed to generate ndn interests to each NDN Testbed node
