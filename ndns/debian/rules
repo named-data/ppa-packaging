@@ -12,12 +12,13 @@
 LDFLAGS := $(shell dpkg-buildflags --get LDFLAGS)
 CXXFLAGS := $(shell dpkg-buildflags --get CXXFLAGS)
 CXXFLAGS += -std=c++11
+LIBDIR := /usr/lib/$(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 
 %:
 	dh $@ --parallel --with=systemd
 
 override_dh_auto_configure:
-	LDFLAGS="${LDFLAGS}" CXXFLAGS="$(CXXFLAGS)" ./waf configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var/lib
+	LDFLAGS="${LDFLAGS}" CXXFLAGS="$(CXXFLAGS)" ./waf configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var/lib --boost-libs="$(LIBDIR)"
 
 override_dh_auto_build:
 	./waf build
