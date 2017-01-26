@@ -5,7 +5,7 @@ Build-Depends: debhelper (>= 8.0.0),
  dh-systemd (>= 1.5),
  python (>= 2.7.0),
  pkg-config (>= 0.26),
- ndn-cxx-dev (>= 0.5.0),
+ ndn-cxx-dev (>= 0.5.1),
  liblog4cxx10-dev (>= 0.10.0),
  libcrypto++-dev (>= 5.6.1),
  protobuf-compiler (>= 2.4.0),
@@ -19,6 +19,6 @@ Vcs-Git: git://github.com/named-data/NLSR.git
 Vcs-Browser: http://github.com/named-data/NLSR
 
 Package: nlsr
-Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends} , ndn-cxx
+Architecture: i386 amd64 arm64 armel armhf ppc64el
+Depends: ${shlibs:Depends}, ${misc:Depends}, ndn-cxx
 Description: A link state routing protocol for Named Data Networking
