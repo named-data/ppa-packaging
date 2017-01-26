@@ -4,7 +4,7 @@ Maintainer: Alexander Afanasyev <alexander.afanasyev@ucla.edu>
 Build-Depends: debhelper (>= 8.0.0),
  python (>= 2.7.0),
  pkg-config (>= 0.26),
- ndn-cxx-dev (>= 0.5.0)
+ ndn-cxx-dev (>= 0.5.1)
 Standards-Version: 3.9.2
 Section: net
 Homepage: http://github.com/named-data/ndn-tlv-ping
@@ -12,7 +12,7 @@ Vcs-Git: git://github.com/named-data/ndn-tlv-ping.git
 Vcs-Browser: http://github.com/named-data/ndn-tlv-ping
 
 Package: ndn-traffic-generator
-Architecture: i386 amd64
+Architecture: i386 amd64 arm64 armel armhf ppc64el
 Depends: ${shlibs:Depends}, ${misc:Depends}, ndn-cxx
 Description: Traffic Generator For NDN
  This tool is designed to generate Interest and Data traffic in an NDN network.  The client
