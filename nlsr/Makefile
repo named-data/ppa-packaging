@@ -8,7 +8,7 @@ GIT_VERSION=NLSR-0.3.1
 NAME=nlsr
 
 # Package version
-VERSION=0.3.1
+VERSION=0.3.1-1restored
 
 # PPA version
 PPA_VERSION=1
