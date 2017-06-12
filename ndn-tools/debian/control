@@ -7,7 +7,7 @@ Build-Depends: debhelper (>= 8.0.0),
  pkg-config (>= 0.26),
  libpcap-dev,
  python-sphinx,
- ndn-cxx-dev (>= 0.5.1)
+ ndn-cxx-dev (>= 0.5.1-60)
 Standards-Version: 3.9.2
 Section: net
 Homepage: http://github.com/named-data/ndn-tools
