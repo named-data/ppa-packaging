@@ -18,10 +18,10 @@ LIBDIR := /usr/lib/$(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 	dh $@ --parallel
 
 override_dh_auto_configure:
-	./waf configure --prefix=/usr --sysconfdir=/etc --libdir="$(LIBDIR)" --localstatedir=/var --disable-static --enable-shared --boost-libs="$(LIBDIR)"
+	./waf configure --without-pch --prefix=/usr --sysconfdir=/etc --libdir="$(LIBDIR)" --localstatedir=/var --disable-static --enable-shared --boost-libs="$(LIBDIR)"
 
 override_dh_auto_build:
-	./waf build
+	./waf build -j1
 
 override_dh_auto_install:
 	./waf install --destdir=debian/tmp
