@@ -8,9 +8,9 @@ GIT_VERSION=6f33e0ffca38158700413eba663f558960abc2df
 NAME=ndn-traffic-generator
 
 # Package version
-VERSION=0.0.6-g6f33e
+VERSION=0.0.7-g6f33e0ff
 
 # PPA version
-PPA_VERSION=4
+PPA_VERSION=1
 
 include ../packaging.mk
