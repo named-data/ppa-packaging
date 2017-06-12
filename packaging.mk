@@ -2,7 +2,7 @@
 PPA=ppa:named-data/ppa-dev
 
 # List of target distributions
-DISTROS=trusty xenial yakkety
+DISTROS=trusty xenial zesty
 
 DEBUILD=debuild -S
 
