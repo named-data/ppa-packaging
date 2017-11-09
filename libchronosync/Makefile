@@ -11,6 +11,6 @@ NAME=libchronosync
 VERSION=0.3.0-9-g097bb44
 
 # PPA version
-PPA_VERSION=2
+PPA_VERSION=3
 
 include ../packaging.mk

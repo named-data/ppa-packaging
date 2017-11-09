@@ -1,3 +1,10 @@
+libchronosync (0.3.0-9-g097bb44-ppa3~DISTRO) DISTRO; urgency=low
+
+  * New version based on 097bb448f46b8bd9a5c1f431e824f8f6a169b650
+    (https://github.com/named-data/ChronoSync.git)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Wed, 14 Jun 2017 21:34:06 +0000
+
 libchronosync (0.3.0-9-g097bb44-ppa2~DISTRO) DISTRO; urgency=low
 
   * New version based on 097bb448f46b8bd9a5c1f431e824f8f6a169b650
