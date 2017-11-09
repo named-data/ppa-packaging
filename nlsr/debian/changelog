@@ -1,3 +1,17 @@
+nlsr (0.3.2-14-backport-of-0.3.2-9-g4c661190-ppa1~DISTRO) DISTRO; urgency=low
+
+  * New version based on 4c66119046e21c503a5c5dfb9cc478d360c65a10
+    (https://github.com/agawande/NLSR)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Thu, 15 Jun 2017 18:12:11 +0000
+
+nlsr (0.3.2-13-ge89e1b4c-ppa1~DISTRO) DISTRO; urgency=low
+
+  * New version based on e89e1b4cee9f65e8cf99491a79cce8d03aee80c9
+    (https://github.com/agawande/NLSR)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Wed, 14 Jun 2017 22:53:48 +0000
+
 nlsr (0.3.2-12-g2108808a-ppa1~DISTRO) DISTRO; urgency=low
 
   * New version based on 2108808ae3706b972e7c22edc5de1b46b3f913b8
