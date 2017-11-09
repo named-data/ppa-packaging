@@ -1,3 +1,10 @@
+ndn-cxx (0.5.1-60-gb555b00c-hotfix1-ppa1~DISTRO) DISTRO; urgency=low
+
+  * New version based on 039cdf65981666a7fb9da44e965695d3e3f05057
+    (https://github.com/cawka/ndn-cxx.git)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Thu, 09 Nov 2017 21:48:17 +0000
+
 ndn-cxx (0.5.1-60-gb555b00c-ppa5~DISTRO) DISTRO; urgency=low
 
   * New version based on b555b00c280b9c9ed46f24a1fbebc73b720601af
