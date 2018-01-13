@@ -18,7 +18,7 @@ LIBDIR := /usr/lib/$(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 	dh $@ --parallel --with=systemd
 
 override_dh_auto_configure:
-	CXXFLAGS="$(CXXFLAGS)" LINKFLAGS="$(LDFLAGS)" ./waf configure --prefix=/usr --boost-libs="$(LIBDIR)"
+	CXXFLAGS="$(CXXFLAGS)" LINKFLAGS="$(LDFLAGS)" ./waf configure --prefix=/usr --boost-libs="$(LIBDIR)" --sysconfdir=/etc
 
 override_dh_auto_build:
 	./waf build

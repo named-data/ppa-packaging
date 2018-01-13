@@ -1,14 +1,14 @@
 # URL for git clone
-GIT_URL=https://github.com/agawande/NLSR
+GIT_URL=https://github.com/named-data/NLSR
 
 # Tag name or commit hash for checkout
-GIT_VERSION=4c66119046e21c503a5c5dfb9cc478d360c65a10
+GIT_VERSION=0.4.0
 
 # Package name
 NAME=nlsr
 
 # Package version
-VERSION=0.3.2-14-backport-of-0.3.2-9-g4c661190
+VERSION=0.4.0-9e955bc
 
 # PPA version
 PPA_VERSION=1
