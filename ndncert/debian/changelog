@@ -1,3 +1,10 @@
+ndncert (0.0.2-1-g443a860-ppa1~DISTRO) DISTRO; urgency=low
+
+  * New version based on 443a8609e87b10bc19fcd3cf06cf706693ceb11f
+    (https://github.com/cawka/ndncert)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Sun, 04 Feb 2018 21:13:02 +0000
+
 ndncert (0.0.1-g8f61cbb-ppa2~DISTRO) DISTRO; urgency=low
 
   * New version based on 8f61cbba028f09553b856ac035071f98b00d0c78
