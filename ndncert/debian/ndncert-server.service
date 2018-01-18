@@ -1,0 +1,22 @@
+# Author: Zhiyi Zhang <zhiyi@cs.ucla.edu>
+
+[Unit]
+Description=Certificate Management CA Service for Named Data Networking
+Documentation=man:ndns-daemon
+Requires=nfd.service
+After=nfd.service
+
+[Service]
+Environment=HOME=/var/lib/ndn/ndncert
+EnvironmentFile=-/etc/default/ndncert
+User=ndncert
+Group=ndncert
+ExecStart=/usr/bin/ndncert-ca-server -c /etc/ndncert/ndncert-ca.conf $FLAGS
+Restart=on-failure
+ProtectSystem=full
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectHome=yes
+
+[Install]
+WantedBy=multi-user.target

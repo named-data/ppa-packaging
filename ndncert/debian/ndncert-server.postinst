@@ -1,0 +1,14 @@
+#!/bin/sh -e
+
+if [ "$1" != "configure" ]; then
+        exit 0
+fi
+
+APP=ndncert
+
+if [ ! -f /var/lib/ndn/$APP/.ndn/pib.db ]; then
+    sudo mkdir -p /var/lib/ndn/$APP/.ndn
+    sudo chown -R ndn:ndn /var/lib/ndn/$APP
+fi
+
+exit 0

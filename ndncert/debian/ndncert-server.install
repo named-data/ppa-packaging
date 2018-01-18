@@ -1,0 +1,5 @@
+etc/ndncert/ca.conf.sample
+etc/ndncert/ndncert-mail.conf.sample
+debian/ndncert-ca.conf /etc/ndncert/
+usr/bin/ndncert-ca-server
+usr/bin/ndncert-ca-status

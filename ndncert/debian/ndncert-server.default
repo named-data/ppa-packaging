@@ -1,0 +1,4 @@
+# ndncert-ca-server defaults
+
+# Whether ndncert-ca-server publishes cert to repo
+FLAGS="-r"
