@@ -11,6 +11,6 @@ NAME=nfd
 VERSION=0.6.0-29-g3d2049fb
 
 # PPA version
-PPA_VERSION=1
+PPA_VERSION=2
 
 include ../packaging.mk

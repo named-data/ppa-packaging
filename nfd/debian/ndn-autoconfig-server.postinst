@@ -6,7 +6,7 @@ fi
 
 APP=ndn-autoconfig-server
 
-if [ ! -f /var/lib/ndn/$APP/.ndn/ndnsec-public-info.db ]; then
+if [ ! -f /var/lib/ndn/$APP/.ndn/pib.db ]; then
     # Create HOME and generate self-signed NDN certificate
     sudo mkdir -p /var/lib/ndn/$APP/.ndn
     sudo chown -R ndn:ndn /var/lib/ndn/$APP
