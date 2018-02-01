@@ -1,3 +1,17 @@
+repo-ng (0.0.12-gd45e62b0-ppa2~DISTRO) DISTRO; urgency=low
+
+  * New version based on d45e62b0fd4170b5527483451cfbe971c19da8c7
+    (https://github.com/named-data/repo-ng)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Thu, 01 Feb 2018 15:23:17 +0000
+
+repo-ng (0.0.12-gd45e62b0-ppa1~DISTRO) DISTRO; urgency=low
+
+  * New version based on d45e62b0fd4170b5527483451cfbe971c19da8c7
+    (https://github.com/named-data/repo-ng)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Wed, 03 Jan 2018 17:42:47 +0000
+
 repo-ng (0.0.11-g42290b-ppa1~DISTRO) DISTRO; urgency=low
 
   * New version based on 42290b2b12b06ccbb028f04367f016f924f213e3
