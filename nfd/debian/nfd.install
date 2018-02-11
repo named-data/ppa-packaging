@@ -6,7 +6,7 @@ usr/bin/nfdc
 
 usr/share/man/man1/nfd-status.1
 usr/share/man/man1/nfd.1
-usr/share/man/man1/nfdc.1
+usr/share/man/man1/nfdc*
 
 debian/nfd-start usr/bin/
 debian/nfd-stop  usr/bin/
