@@ -7,9 +7,9 @@ Build-Depends: debhelper (>= 8.0.0),
  ndn-cxx-dev (>= 0.6.0)
 Standards-Version: 3.9.2
 Section: net
-Homepage: http://github.com/named-data/ndn-tlv-ping
-Vcs-Git: git://github.com/named-data/ndn-tlv-ping.git
-Vcs-Browser: http://github.com/named-data/ndn-tlv-ping
+Homepage: http://github.com/named-data/ndn-traffic-generator
+Vcs-Git: git://github.com/named-data/ndn-traffic-generator.git
+Vcs-Browser: http://github.com/named-data/ndn-traffic-generator
 
 Package: ndn-traffic-generator
 Architecture: i386 amd64 arm64 armel armhf ppc64el

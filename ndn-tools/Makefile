@@ -11,6 +11,6 @@ NAME=ndn-tools
 VERSION=0.5-14-gcc2c717b
 
 # PPA version
-PPA_VERSION=2
+PPA_VERSION=3
 
 include ../packaging.mk

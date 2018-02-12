@@ -3,27 +3,24 @@ Upstream-Name: ndn-tools
 Source: http://github.com/named-data/ndn-tools
 
 Files: *
-Copyright: Copyright (c) 2014-2016, Regents of the University of California,
-                                    Arizona Board of Regents,
-                                    Colorado State University,
-                                    University Pierre & Marie Curie, Sorbonne University,
-                                    Washington University in St. Louis,
-                                    Beijing Institute of Technology,
-                                    The University of Memphis.
+Copyright: Copyright (c) 2014-2018, Various Stakeholders (refer to source code)
 License: GPL-3+
- ndndump is free software: you can redistribute it and/or modify it under the terms
+ This file is part of ndn-tools (Named Data Networking Essential Tools).
+ See AUTHORS.md for complete list of ndn-tools authors and contributors.
+ .
+ ndn-tools is free software: you can redistribute it and/or modify it under the terms
  of the GNU General Public License as published by the Free Software Foundation,
  either version 3 of the License, or (at your option) any later version.
  .
- ndndump is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ ndn-tools is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  PURPOSE.  See the GNU General Public License for more details.
  .
  You should have received a copy of the GNU General Public License along with
- ndndump, e.g., in COPYING file.  If not, see <http://www.gnu.org/licenses/>.
+ ndn-tools, e.g., in COPYING.md file.  If not, see <http://www.gnu.org/licenses/>.
 
 Files: debian/*
-Copyright: Copyright (c) 2013-2016, Alexander Afanasyev <alexander.afanasyev@ucla.edu>
+Copyright: Copyright (c) 2013-2018, Alexander Afanasyev <aa@cs.fiu.edu>
 License: Apache 2.0
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
