@@ -1,3 +1,11 @@
+nlsr (0.4.0-14-gf7da9c54-ppa3~DISTRO) DISTRO; urgency=low
+
+  * Remove unused dependency on liblog4cxx. Version based on
+    f7da9c542cf29c458733197ff47a54b270ad6712 (https://github.com/named-
+    data/NLSR)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Mon, 12 Feb 2018 01:14:07 +0000
+
 nlsr (0.4.0-14-gf7da9c54-ppa1~DISTRO) DISTRO; urgency=low
 
   * New version based on f7da9c542cf29c458733197ff47a54b270ad6712

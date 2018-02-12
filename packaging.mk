@@ -83,7 +83,7 @@ NEW_VER="${VERSION}-ppa${PPA_VERSION}~DISTRO"; \
 CUR_VER=`dpkg-parsechangelog | grep '^Version: ' | awk '{print $$2}'`; \
 if dpkg --compare-versions $$NEW_VER gt $$CUR_VER; then \
   dch -v $$NEW_VER -D DISTRO --force-distribution \
-        -u low "New version based on ${GIT_VERSION} (${GIT_URL})" ; \
+        -u low "${CHANGE}Version based on ${GIT_VERSION} (${GIT_URL})" ; \
 fi
 
 clean:
