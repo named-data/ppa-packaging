@@ -1,3 +1,11 @@
+repo-ng (0.0.13-g888cb9-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Fix auto-prefix registration for inserted data. Version based on
+    888cb9147d381bcb3cd79592a94f56134de1972e
+    (https://github.com/cawka/repo-ng)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Thu, 15 Feb 2018 22:54:32 +0000
+
 repo-ng (0.0.12-gd45e62b0-ppa4~DISTRO) DISTRO; urgency=low
 
   * New version based on d45e62b0fd4170b5527483451cfbe971c19da8c7
