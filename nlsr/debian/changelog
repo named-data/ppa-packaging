@@ -1,3 +1,11 @@
+nlsr (0.4.0-16-g982a58fa-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Add versioning of ChronoSync prefix. Version based on
+    982a58fae5ce59a9f1f526d456b2e9edc759aa50 (https://github.com/named-
+    data/NLSR)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Thu, 15 Feb 2018 16:57:44 +0000
+
 nlsr (0.4.0-14-gf7da9c54-ppa3~DISTRO) DISTRO; urgency=low
 
   * Remove unused dependency on liblog4cxx. Version based on
