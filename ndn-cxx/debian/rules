@@ -40,4 +40,4 @@ override_dh_auto_test:
 
 .PHONY: override_dh_strip
 override_dh_strip:
-	dh_strip --dbg-package=ndn-cxx-dbg
+	dh_strip --dbg-package=libndn-cxx-dbg

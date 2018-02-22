@@ -3,7 +3,7 @@ Upstream-Name: ndn-cxx
 Source: http://github.com/named-data/ndn-cxx
 
 Files: *
-Copyright:  Copyright (c) 2013-2016 Regents of the University of California.
+Copyright:  Copyright (c) 2013-2018 Regents of the University of California.
 License: LGPL-3+
  ndn-cxx library is free software: you can redistribute it and/or modify it under the
  terms of the GNU Lesser General Public License as published by the Free Software
@@ -20,7 +20,7 @@ License: LGPL-3+
  See AUTHORS.md of ndn-cxx source for complete list of ndn-cxx authors and contributors.
 
 Files: debian/*
-Copyright: 2013-2016, Alexander Afanasyev <alexander.afanasyev@ucla.edu>
+Copyright: 2013-2018, Alexander Afanasyev <alexander.afanasyev@ucla.edu>
 License: Apache 2.0
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
