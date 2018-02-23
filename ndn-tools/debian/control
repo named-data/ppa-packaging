@@ -7,7 +7,7 @@ Build-Depends: debhelper (>= 8.0.0),
  pkg-config (>= 0.26),
  libpcap-dev,
  python-sphinx,
- ndn-cxx-dev (>= 0.6.0)
+ libndn-cxx-dev (>= 0.6.1)
 Standards-Version: 3.9.2
 Section: net
 Homepage: http://github.com/named-data/ndn-tools
@@ -21,13 +21,13 @@ Description: A collection of essential tools for Named Data Networking
 
 Package: ndndump
 Architecture: i386 amd64 arm64 armel armhf ppc64el
-Depends: ${shlibs:Depends}, ${misc:Depends}, ndn-cxx
+Depends: ${shlibs:Depends}, ${misc:Depends}, libndn-cxx
 Description: A traffic analysis tool that captures Interest and Data packets
  on the wire, and displays brief information about captured packets.
 
 Package: ndnping
 Architecture: i386 amd64 arm64 armel armhf ppc64el
-Depends: ${shlibs:Depends}, ${misc:Depends}, ndn-cxx, nfd
+Depends: ${shlibs:Depends}, ${misc:Depends}, libndn-cxx, ndnsec, nfd
 Description: Reachability testing tools for Named Data Networking.
 
 Package: ndn-tlv-ping
@@ -37,13 +37,13 @@ Description: Deprecated package, use ndnping instead
 
 Package: ndnpeek
 Architecture: i386 amd64 arm64 armel armhf ppc64el
-Depends: ${shlibs:Depends}, ${misc:Depends}, ndn-cxx
+Depends: ${shlibs:Depends}, ${misc:Depends}, libndn-cxx, ndnsec
 Description: ndnpeek and ndnpoke are a pair of programs to request and make available
  for retrieval of a single Data packet.
 
 Package: ndn-dissect
 Architecture: i386 amd64 arm64 armel armhf ppc64el
-Depends: ${shlibs:Depends}, ${misc:Depends}, ndn-cxx
+Depends: ${shlibs:Depends}, ${misc:Depends}, libndn-cxx
 Description: An NDN packet format inspector. It reads zero or more NDN packets from either
  an input file or the standard input, and displays the Type-Length-Value (TLV) structure
  of those packets on the standard output.
