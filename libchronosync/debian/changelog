@@ -1,3 +1,29 @@
+libchronosync (0.5.0-ppa2~DISTRO) DISTRO; urgency=low
+
+  * Version based on 0.5.0 (https://github.com/cawka/ChronoSync.git)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Fri, 23 Feb 2018 15:08:07 +0000
+
+libchronosync (0.5.0-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on 0.5.0 (https://github.com/cawka/ChronoSync.git)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Fri, 23 Feb 2018 14:50:33 +0000
+
+libchronosync (0.4.0-10-gbf5bc6c-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on bf5bc6cb74c7d04ae825d8d0801f055df90691c9
+    (https://github.com/cawka/ChronoSync.git)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Mon, 19 Feb 2018 17:33:13 +0000
+
+libchronosync (0.4.0-9-gfcbf81d-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on fcbf81d234bf5f0d44e956f7f340ffb8e1ebc7fe
+    (https://github.com/cawka/ChronoSync.git)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Mon, 19 Feb 2018 15:29:40 +0000
+
 libchronosync (0.4.0-8-g6ee98ff-ppa1~DISTRO) DISTRO; urgency=low
 
   * **Breaking change** Use bzip2 compression of sync data
