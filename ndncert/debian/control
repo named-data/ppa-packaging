@@ -4,7 +4,7 @@ Maintainer: Zhiyi Zhang <zhiyi@cs.ucla.edu>
 Build-Depends: debhelper (>= 8.0.0),
  python (>= 2.7.0),
  pkg-config (>= 0.26),
- ndn-cxx-dev (>= 0.6.0)
+ libndn-cxx-dev (>= 0.6.1)
 Standards-Version: 3.9.2
 Section: net
 Homepage: http://github.com/named-data/ndncert
@@ -21,7 +21,7 @@ Description: NDN Certificate Management System
 
 Package: libndncert-dev
 Section: libdevel
-Depends: libndncert (= ${binary:Version}), ${misc:Depends}, ndn-cxx-dev
+Depends: libndncert (= ${binary:Version}), ${misc:Depends}, libndn-cxx-dev
 Architecture: i386 amd64 arm64 armel armhf ppc64el
 Description: NDN Certificate Management System
  The library to support NDNCERT protocol and help
@@ -43,13 +43,13 @@ Description: NDN Certificate Management System
 
 Package: ndncert
 Architecture: i386 amd64 arm64 armel armhf ppc64el
-Depends: ${shlibs:Depends}, ${misc:Depends}, ndn-cxx
+Depends: ${shlibs:Depends}, ${misc:Depends}, libndn-cxx, ndnsec
 Description: NDN Certificate Management System
  Tools to support NDNCERT protocol and help
  NDN entities do certificate management.
 
 Package: ndncert-server
-Depends: ${shlibs:Depends}, ${misc:Depends}, ndncert, ndn-cxx, nfd
+Depends: ${shlibs:Depends}, ${misc:Depends}, ndncert, libndn-cxx, ndnsec, nfd
 Architecture: i386 amd64 arm64 armel armhf ppc64el
 Description: NDN Certificate Management System
  Daemon to support NDNCERT protocol and help

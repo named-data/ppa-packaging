@@ -5,7 +5,7 @@ Build-Depends: debhelper (>= 8.0.0),
  dh-systemd (>= 1.5),
  python (>= 2.7.0),
  pkg-config (>= 0.26),
- ndn-cxx-dev (>= 0.6.0)
+ libndn-cxx-dev (>= 0.6.1)
 Standards-Version: 3.9.2
 Section: net
 Homepage: http://github.com/named-data/repo-ng
@@ -14,7 +14,7 @@ Vcs-Browser: http://github.com/named-data/repo-ng
 
 Package: repo-ng
 Architecture: i386 amd64 arm64 armel armhf ppc64el
-Depends: ${shlibs:Depends}, ${misc:Depends}, ndn-cxx
+Depends: ${shlibs:Depends}, ${misc:Depends}, libndn-cxx, ndnsec
 Description: Next generation of NDN repository
  repo-ng is an implementation of a Named Data Networking data repository with the protocol
  defined on NDN wiki: http://redmine.named-data.net/projects/repo-ng/wiki

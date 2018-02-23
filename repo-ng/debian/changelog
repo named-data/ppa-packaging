@@ -1,3 +1,10 @@
+repo-ng (0.0.14-gd606ecf-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on d606ecf0c85564e5ef4808245f081b19b8e84f5a
+    (https://github.com/named-data/repo-ng)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Fri, 23 Feb 2018 15:46:36 +0000
+
 repo-ng (0.0.13-g888cb9-ppa1~DISTRO) DISTRO; urgency=low
 
   * Fix auto-prefix registration for inserted data. Version based on

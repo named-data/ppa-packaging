@@ -11,6 +11,6 @@ NAME=ndncert
 VERSION=0.0.2-1-g443a860
 
 # PPA version
-PPA_VERSION=2
+PPA_VERSION=3
 
 include ../packaging.mk
