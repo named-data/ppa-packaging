@@ -1,3 +1,23 @@
+nlsr (0.4.1-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on NLSR-0.4.1 (https://github.com/named-data/NLSR)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Fri, 23 Feb 2018 15:56:18 +0000
+
+nlsr (0.4.0-19-g0c3c71ef-ppa2~DISTRO) DISTRO; urgency=low
+
+  * Version based on 0c3c71efbc4c6384da84e9100cf7a7d26a748fbe
+    (https://github.com/cawka/NLSR)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Mon, 19 Feb 2018 17:52:12 +0000
+
+nlsr (0.4.0-19-g0c3c71ef-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on 0c3c71efbc4c6384da84e9100cf7a7d26a748fbe
+    (https://github.com/cawka/NLSR)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Mon, 19 Feb 2018 17:41:40 +0000
+
 nlsr (0.4.0-16-g982a58fa-ppa1~DISTRO) DISTRO; urgency=low
 
   * Add versioning of ChronoSync prefix. Version based on
