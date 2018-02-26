@@ -46,3 +46,22 @@ Architecture: i386 amd64 arm64 armel armhf ppc64el
 Depends: libndn-cxx (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
 Description: NDN security tools
 Conflicts: ndn.cxx-security-tools
+
+Package: ndn-cxx-dev
+Section: libdevel
+Architecture: any
+Depends: libndn-cxx-dev (= ${binary:Version})
+Description: Deprecated package (use libndn-cxx-dev)
+
+Package: ndn-cxx
+Section: libs
+Architecture: any
+Depends: libndn-cxx (= ${binary:Version})
+Description: Deprecated package (use libndn-cxx)
+
+Package: ndn-cxx-dbg
+Architecture: any
+Section: debug
+Priority: extra
+Depends: libndn-cxx-dbg (= ${binary:Version})
+Description: Deprecated package (use libndn-cxx-dbg)
