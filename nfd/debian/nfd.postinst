@@ -23,6 +23,9 @@ mkdir -p "/var/lib/ndn/nfd/.ndn"
 
 chown -R ndn:ndn "/var/lib/ndn/nfd"
 
+# Enable Ethernet face creation
+setcap cap_net_raw,cap_net_admin=eip /usr/bin/nfd
+
 #DEBHELPER#
 
 exit 0
