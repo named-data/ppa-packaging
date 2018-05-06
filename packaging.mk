@@ -2,7 +2,7 @@
 PPA=ppa:named-data/ppa-dev
 
 # List of target distributions
-DISTROS=trusty xenial artful
+DISTROS=trusty xenial artful bionic
 
 DEBUILD=debuild -S
 
