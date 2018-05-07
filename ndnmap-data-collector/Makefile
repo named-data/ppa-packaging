@@ -11,6 +11,6 @@ NAME=ndnmap-data-collector
 VERSION=0.1.0-12-gaff60ff
 
 # PPA version
-PPA_VERSION=3
+PPA_VERSION=4
 
 include ../packaging.mk

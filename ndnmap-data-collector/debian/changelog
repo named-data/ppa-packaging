@@ -1,3 +1,10 @@
+ndnmap-data-collector (0.1.0-12-gaff60ff-ppa4~DISTRO) DISTRO; urgency=low
+
+  * Version based on aff60ff4d524c013d051e2d2229fab9f6d0ca0c4
+    (https://github.com/cawka/ndnmapDataCollector)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Mon, 07 May 2018 06:32:25 +0000
+
 ndnmap-data-collector (0.1.0-12-gaff60ff-ppa3~DISTRO) DISTRO; urgency=low
 
   * Version based on aff60ff4d524c013d051e2d2229fab9f6d0ca0c4

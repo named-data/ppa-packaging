@@ -1,3 +1,10 @@
+ndncert (0.0.2-2-g047386ef-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on 047386ef50b5e6ec479274de034440e2cf2b72e7
+    (https://github.com/named-data/ndncert)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Mon, 07 May 2018 03:52:03 +0000
+
 ndncert (0.0.2-1-g443a860-ppa3~DISTRO) DISTRO; urgency=low
 
   * Version based on 443a8609e87b10bc19fcd3cf06cf706693ceb11f
