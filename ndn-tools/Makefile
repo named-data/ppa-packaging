@@ -2,13 +2,13 @@
 GIT_URL=https://github.com/named-data/ndn-tools
 
 # Tag name or commit hash for checkout
-GIT_VERSION=ndn-tools-0.6
+GIT_VERSION=ndn-tools-0.6.1
 
 # Package name
 NAME=ndn-tools
 
 # Package version
-VERSION=0.6
+VERSION=0.6.1
 
 # PPA version
 PPA_VERSION=1
