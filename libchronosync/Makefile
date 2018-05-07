@@ -1,16 +1,16 @@
 # URL for git clone
-GIT_URL=https://github.com/cawka/ChronoSync.git
+GIT_URL=https://github.com/named-data/ChronoSync.git
 
 # Tag name or commit hash for checkout
-GIT_VERSION=0.5.0
+GIT_VERSION=0.5.1
 
 # Package name
 NAME=libchronosync
 
 # Package version
-VERSION=0.5.0
+VERSION=0.5.1-1
 
 # PPA version
-PPA_VERSION=2
+PPA_VERSION=1
 
 include ../packaging.mk

@@ -1,3 +1,16 @@
+libchronosync (0.5.1-1-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on 0.5.1 (https://github.com/named-
+    data/ChronoSync.git)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Mon, 07 May 2018 06:20:24 +0000
+
+libchronosync (0.5.1-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on 0.5.1 (https://github.com/cawka/ChronoSync.git)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Mon, 07 May 2018 06:04:35 +0000
+
 libchronosync (0.5.0-ppa2~DISTRO) DISTRO; urgency=low
 
   * Version based on 0.5.0 (https://github.com/cawka/ChronoSync.git)
