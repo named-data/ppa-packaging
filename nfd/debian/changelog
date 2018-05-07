@@ -1,3 +1,9 @@
+nfd (0.6.2-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on NFD-0.6.2 (https://github.com/named-data/NFD.git)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Mon, 07 May 2018 03:39:09 +0000
+
 nfd (0.6.1-ppa2~DISTRO) DISTRO; urgency=low
 
   * Enable Ethernet face creation
