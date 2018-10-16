@@ -11,7 +11,7 @@
 
 LDFLAGS := $(shell dpkg-buildflags --get LDFLAGS)
 CXXFLAGS := $(shell dpkg-buildflags --get CXXFLAGS)
-CXXFLAGS += -std=c++11
+CXXFLAGS += -std=c++14
 LIBDIR := /usr/lib/$(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 
 %:
