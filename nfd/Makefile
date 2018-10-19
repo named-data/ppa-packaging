@@ -1,14 +1,14 @@
 # URL for git clone
-GIT_URL=https://github.com/cawka/NFD.git
+GIT_URL=https://github.com/named-data/NFD.git
 
 # Tag name or commit hash for checkout
-GIT_VERSION=3c0c03560955122a782d83f552e5f8fd4d2cfff9
+GIT_VERSION=NFD-0.6.4
 
 # Package name
 NAME=nfd
 
 # Package version
-VERSION=0.6.3-2-g3c0c0356
+VERSION=0.6.4
 
 # PPA version
 PPA_VERSION=1
