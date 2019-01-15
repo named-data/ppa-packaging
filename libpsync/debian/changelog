@@ -1,0 +1,5 @@
+libpsync (0.1.0-ppa0~DISTRO) DISTRO; urgency=low
+
+  * Initial release
+
+ -- Ashlesh Gawande <agawande@memphis.edu>  Mon, 14 Jan 2019 18:36:57 -0600

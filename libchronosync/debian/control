@@ -23,9 +23,7 @@ Description: Sync library for multiuser realtime applications for NDN
 Package: libchronosync-dev
 Section: libdevel
 Architecture: i386 amd64 arm64 armel armhf ppc64el
-Depends: python (>= 2.7.0),
- pkg-config (>= 0.26),
- libndn-cxx-dev (>= 0.6.1),
+Depends: libndn-cxx-dev (>= 0.6.1),
  libchronosync (= ${binary:Version})
 Description: Development headers and libraries of sync library for multiuser realtime applications for NDN
 
