@@ -5,10 +5,11 @@ Build-Depends: debhelper (>= 8.0.0),
  dh-systemd (>= 1.5),
  python (>= 2.7.0),
  pkg-config (>= 0.26),
- libndn-cxx-dev (>= 0.6.2),
+ libndn-cxx-dev (>= 0.6.5),
  python-sphinx,
- libpcap-dev,
- libboost-all-dev (>= 1.53.0),
+ libpcap-dev (>= 1.5.3),
+ libboost-all-dev (>= 1.58.0),
+ libsystemd-dev,
  git
 Standards-Version: 3.9.2
 Section: net
