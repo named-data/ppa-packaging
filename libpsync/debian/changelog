@@ -1,3 +1,23 @@
+libpsync (0.1.0-3-g3cb0b1b-ppa2~DISTRO) DISTRO; urgency=low
+
+  * Version based on 3cb0b1b408a5a6542af77fb782018bb962b24bcb
+    (https://github.com/named-data/PSync.git)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Fri, 08 Mar 2019 18:21:32 +0000
+
+libpsync (0.1.0-3-g3cb0b1b-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on 3cb0b1b408a5a6542af77fb782018bb962b24bcb
+    (https://github.com/named-data/PSync.git)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Fri, 08 Mar 2019 18:12:37 +0000
+
+libpsync (0.1.0-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on 0.1.0 (https://github.com/named-data/PSync.git)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Thu, 07 Mar 2019 22:23:42 +0000
+
 libpsync (0.1.0-ppa0~DISTRO) DISTRO; urgency=low
 
   * Initial release
