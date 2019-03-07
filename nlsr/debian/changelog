@@ -1,3 +1,17 @@
+nlsr (0.4.3-7-gd07ad16-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on d07ad167a384ef3e0da6621809b5e58f4a1ad705
+    (https://github.com/agawande/NLSR)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Tue, 13 Nov 2018 01:18:56 +0000
+
+nlsr (0.4.3-6-g3494f736-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on 3494f7366a4483036352275a92c57f017dfa06eb
+    (https://github.com/named-data/NLSR)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Fri, 09 Nov 2018 02:54:51 +0000
+
 nlsr (0.4.3-5-g05cb728-ppa1~DISTRO) DISTRO; urgency=low
 
   * Version based on 05cb728c6321f07c8d56f6a57daad9c007d59f9a
