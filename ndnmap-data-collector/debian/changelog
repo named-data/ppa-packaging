@@ -1,3 +1,24 @@
+ndnmap-data-collector (0.1.0-15-g29c1984-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on 29c1984601f7bd78b9946a2bd147cda16dcef236
+    (https://github.com/WU-ARL/ndnmapDataCollector)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Mon, 18 Mar 2019 17:02:36 +0000
+
+ndnmap-data-collector (0.1.0-14-gbb2a951809-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on bb2a95180940568be42d4072ce2e212ef523cc58
+    (https://github.com/cawka/ndnmapDataCollector)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Thu, 07 Mar 2019 23:22:01 +0000
+
+ndnmap-data-collector (0.1.0-13-gbc63136-ppa2~DISTRO) DISTRO; urgency=low
+
+  * Version based on bc631369cce10318269be6d2811038bac1d9f11c
+    (https://github.com/cawka/ndnmapDataCollector)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Thu, 07 Mar 2019 22:25:29 +0000
+
 ndnmap-data-collector (0.1.0-13-gbc63136-ppa1~DISTRO) DISTRO; urgency=low
 
   * Version based on bc631369cce10318269be6d2811038bac1d9f11c

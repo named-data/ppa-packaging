@@ -1,14 +1,14 @@
 # URL for git clone
-GIT_URL=https://github.com/cawka/ndnmapDataCollector
+GIT_URL=https://github.com/WU-ARL/ndnmapDataCollector
 
 # Tag name or commit hash for checkout
-GIT_VERSION=bc631369cce10318269be6d2811038bac1d9f11c
+GIT_VERSION=29c1984601f7bd78b9946a2bd147cda16dcef236
 
 # Package name
 NAME=ndnmap-data-collector
 
 # Package version
-VERSION=0.1.0-13-gbc63136
+VERSION=0.1.0-15-g29c1984
 
 # PPA version
 PPA_VERSION=1
