@@ -2,15 +2,15 @@
 GIT_URL=https://github.com/named-data/ChronoSync.git
 
 # Tag name or commit hash for checkout
-GIT_VERSION=a2416db9125f6a24e1461b7d2929ba701c43664f
+GIT_VERSION=c490212fb2a293c0594d9f097146bed4062700e1
 
 # Package name
 NAME=libchronosync
 
 # Package version
-VERSION=0.5.1-2-g1d1092
+VERSION=0.5.2-4-gc490212
 
 # PPA version
-PPA_VERSION=2
+PPA_VERSION=1
 
 include ../packaging.mk
