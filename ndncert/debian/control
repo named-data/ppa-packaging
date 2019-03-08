@@ -4,7 +4,7 @@ Maintainer: Zhiyi Zhang <zhiyi@cs.ucla.edu>
 Build-Depends: debhelper (>= 8.0.0),
  python (>= 2.7.0),
  pkg-config (>= 0.26),
- libndn-cxx-dev (>= 0.6.1)
+ libndn-cxx-dev (>= 0.6.5)
 Standards-Version: 3.9.2
 Section: net
 Homepage: http://github.com/named-data/ndncert
