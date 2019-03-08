@@ -1,3 +1,24 @@
+ndns (0.0.11-gc7888e613-ppa3~DISTRO) DISTRO; urgency=low
+
+  * Version based on c7888e613cb3cbf9feb6ed81d750309521104175
+    (https://github.com/named-data/ndns)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Fri, 08 Mar 2019 01:26:58 +0000
+
+ndns (0.0.11-gc7888e613-ppa2~DISTRO) DISTRO; urgency=low
+
+  * Version based on c7888e613cb3cbf9feb6ed81d750309521104175
+    (https://github.com/named-data/ndns)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Fri, 08 Mar 2019 01:19:58 +0000
+
+ndns (0.0.11-gc7888e613-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on c7888e613cb3cbf9feb6ed81d750309521104175
+    (https://github.com/named-data/ndns)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Fri, 08 Mar 2019 00:11:46 +0000
+
 ndns (0.0.10-g9edaf2-ppa3~DISTRO) DISTRO; urgency=low
 
   * Version based on 9edaf26034db6642ffceb73f336a1c295d9370b1

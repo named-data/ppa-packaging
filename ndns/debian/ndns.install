@@ -1,6 +1,5 @@
-etc/ndns/*
-debian/ndns.conf etc/ndns/
-debian/validator.conf etc/ndns/
-debian/ndn-testbed-root.ndncert.base64 etc/ndns/anchors/
-debian/log4cxx.properties etc/ndns/
+etc/ndn/ndns/*
+debian/ndns.conf etc/ndn/ndns/
+debian/validator.conf etc/ndn/ndns/
+debian/ndn-testbed-root.ndncert.base64 etc/ndn/ndns/anchors/
 usr/bin/*
