@@ -7,7 +7,7 @@ Build-Depends: debhelper (>= 8.0.0),
  pkg-config (>= 0.26),
  libpcap-dev,
  python-sphinx,
- libndn-cxx-dev (>= 0.6.2),
+ libndn-cxx-dev (>= 0.6.5),
  git
 Standards-Version: 3.9.2
 Section: net
@@ -39,8 +39,8 @@ Description: Deprecated package, use ndnping instead
 Package: ndnpeek
 Architecture: i386 amd64 arm64 armel armhf ppc64el
 Depends: ${shlibs:Depends}, ${misc:Depends}, libndn-cxx, ndnsec
-Description: ndnpeek and ndnpoke are a pair of programs to request and make available
- for retrieval of a single Data packet.
+Description: ndnpeek and ndnpoke are a pair of programs to respectively request and serve
+ a single Data packet.
 
 Package: ndn-dissect
 Architecture: i386 amd64 arm64 armel armhf ppc64el
@@ -52,6 +52,11 @@ Description: An NDN packet format inspector. It reads zero or more NDN packets f
 Package: ndn-dissect-wireshark
 Architecture: i386 amd64 arm64 armel armhf ppc64el
 Description: Wireshark extension to inspect TLV structure of NDN packets
+
+Package: ndnchunks
+Architecture: i386 amd64 arm64 armel armhf ppc64el
+Depends: ${shlibs:Depends}, ${misc:Depends}, libndn-cxx, ndnsec
+Description: ndncatchunks and ndnputchunks for for publishing and retrieving segmented content
 
 # Package: ndn-pib
 # Architecture: i386 amd64 arm64 armel armhf ppc64el
