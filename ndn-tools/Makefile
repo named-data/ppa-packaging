@@ -11,6 +11,6 @@ NAME=ndn-tools
 VERSION=0.6.3-9-release-0.6.3
 
 # PPA version
-PPA_VERSION=2
+PPA_VERSION=3
 
 include ../packaging.mk
