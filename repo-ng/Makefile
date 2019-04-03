@@ -1,14 +1,14 @@
 # URL for git clone
-GIT_URL=https://github.com/named-data/repo-ng
+GIT_URL=https://github.com/cawka/repo-ng
 
 # Tag name or commit hash for checkout
-GIT_VERSION=c44331eecc9ea7dd81cf32e7fbf8e813bb75b22a
+GIT_VERSION=d66558eb90a555b4a4df2f88061edace364113b8
 
 # Package name
 NAME=repo-ng
 
 # Package version
-VERSION=0.0.17-gc44331eec
+VERSION=0.0.20-gd66558
 
 # PPA version
 PPA_VERSION=1

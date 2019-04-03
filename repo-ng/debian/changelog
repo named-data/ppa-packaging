@@ -1,3 +1,10 @@
+repo-ng (0.0.20-gd66558-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on d66558eb90a555b4a4df2f88061edace364113b8
+    (https://github.com/cawka/repo-ng)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Wed, 03 Apr 2019 21:14:46 +0000
+
 repo-ng (0.0.17-gc44331eec-ppa1~DISTRO) DISTRO; urgency=low
 
   * Version based on c44331eecc9ea7dd81cf32e7fbf8e813bb75b22a
