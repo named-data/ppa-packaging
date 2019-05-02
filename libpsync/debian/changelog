@@ -1,3 +1,10 @@
+libpsync (0.1.0-6-g17b266c-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on 17b266c3a0313d9bf1266f69337da6a3acff983e
+    (https://github.com/named-data/PSync.git)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Thu, 02 May 2019 20:15:47 +0000
+
 libpsync (0.1.0-3-g3cb0b1b-ppa2~DISTRO) DISTRO; urgency=low
 
   * Version based on 3cb0b1b408a5a6542af77fb782018bb962b24bcb
