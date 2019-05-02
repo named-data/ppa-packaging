@@ -1,3 +1,9 @@
+nfd (0.6.6-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on NFD-0.6.6 (https://github.com/named-data/NFD.git)
+
+ -- Alexander Afanasyev <alexander.afanasyev@ucla.edu>  Thu, 02 May 2019 20:11:58 +0000
+
 nfd (0.6.5-ppa3~DISTRO) DISTRO; urgency=low
 
   * Version based on NFD-0.6.5 (https://github.com/named-data/NFD.git)
