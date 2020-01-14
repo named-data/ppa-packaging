@@ -2,7 +2,7 @@
 PPA=ppa:named-data/ppa-dev
 
 # List of target distributions
-DISTROS=xenial bionic disco
+DISTROS=xenial bionic eoan
 
 DEBUILD=debuild -S
 
