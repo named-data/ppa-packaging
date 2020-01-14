@@ -7,7 +7,7 @@ Build-Depends: debhelper (>= 8.0.0),
  pkg-config (>= 0.26),
  libpcap-dev,
  python-sphinx,
- libndn-cxx-dev (>= 0.6.6),
+ libndn-cxx-dev (>= 0.7.0),
  git
 Standards-Version: 3.9.2
 Section: net
@@ -17,34 +17,29 @@ Vcs-Browser: http://github.com/named-data/ndn-tools
 
 Package: ndn-tools
 Architecture: i386 amd64 arm64 armel armhf ppc64el
-Depends: ndndump, ndnping, ndnpeek, ndn-dissect
+Depends: ndndump, ndnping, ndnpeek, ndn-dissect, ndnchunks
 Description: A collection of essential tools for Named Data Networking
 
 Package: ndndump
 Architecture: i386 amd64 arm64 armel armhf ppc64el
-Depends: ${shlibs:Depends}, ${misc:Depends}, libndn-cxx
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: A traffic analysis tool that captures Interest and Data packets
  on the wire, and displays brief information about captured packets.
 
 Package: ndnping
 Architecture: i386 amd64 arm64 armel armhf ppc64el
-Depends: ${shlibs:Depends}, ${misc:Depends}, libndn-cxx, ndnsec, nfd
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Reachability testing tools for Named Data Networking.
-
-Package: ndn-tlv-ping
-Architecture: i386 amd64 arm64 armel armhf ppc64el
-Depends: ndnping
-Description: Deprecated package, use ndnping instead
 
 Package: ndnpeek
 Architecture: i386 amd64 arm64 armel armhf ppc64el
-Depends: ${shlibs:Depends}, ${misc:Depends}, libndn-cxx, ndnsec
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: ndnpeek and ndnpoke are a pair of programs to respectively request and serve
  a single Data packet.
 
 Package: ndn-dissect
 Architecture: i386 amd64 arm64 armel armhf ppc64el
-Depends: ${shlibs:Depends}, ${misc:Depends}, libndn-cxx
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: An NDN packet format inspector. It reads zero or more NDN packets from either
  an input file or the standard input, and displays the Type-Length-Value (TLV) structure
  of those packets on the standard output.
@@ -55,9 +50,6 @@ Description: Wireshark extension to inspect TLV structure of NDN packets
 
 Package: ndnchunks
 Architecture: i386 amd64 arm64 armel armhf ppc64el
-Depends: ${shlibs:Depends}, ${misc:Depends}, libndn-cxx, ndnsec
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: ndncatchunks and ndnputchunks for for publishing and retrieving segmented content
 
-# Package: ndn-pib
-# Architecture: i386 amd64 arm64 armel armhf ppc64el
-# Description: A service to manage the public information of keys and publish certificates
