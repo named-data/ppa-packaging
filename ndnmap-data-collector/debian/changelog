@@ -1,3 +1,10 @@
+ndnmap-data-collector (0.1.0-15-g29c1984-ppa4~DISTRO) DISTRO; urgency=low
+
+  * Version based on 29c1984601f7bd78b9946a2bd147cda16dcef236
+    (https://github.com/WU-ARL/ndnmapDataCollector)
+
+ -- Alexander Afanasyev <aa@cs.fiu.edu>  Wed, 15 Jan 2020 19:16:51 +0000
+
 ndnmap-data-collector (0.1.0-15-g29c1984-ppa2~DISTRO) DISTRO; urgency=low
 
   * Version based on 29c1984601f7bd78b9946a2bd147cda16dcef236
