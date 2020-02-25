@@ -1,3 +1,9 @@
+nlsr (0.5.2-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on NLSR-0.5.2 (https://github.com/named-data/NLSR)
+
+ -- Alexander Afanasyev <aa@cs.fiu.edu>  Tue, 25 Feb 2020 16:41:09 +0000
+
 nlsr (0.5.0-5-g15052408-ppa1~DISTRO) DISTRO; urgency=low
 
   * Version based on 15052408e9a79b791ef95f2703f72cba233766ea
