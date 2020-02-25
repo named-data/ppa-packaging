@@ -4,7 +4,7 @@ PPA=ppa:named-data/ppa-dev
 # List of target distributions
 DISTROS=xenial bionic eoan
 
-DEBUILD=debuild -S
+DEBUILD=debuild -S -d
 
 all: _phony
 
@@ -27,7 +27,7 @@ cd .. ; \
 tar --exclude .git --exclude '*.pyc' -cf - ${NAME}_${VERSION} | gzip -n9c > ${NAME}_${VERSION}.orig.tar.gz
 
 source-build:
-	$(MAKE) _build DEBUILD="debuild -S -sa"
+	$(MAKE) _build DEBUILD="debuild -S -sa -d"
 
 build:
 	$(MAKE) _build DEBUILD=debuild
