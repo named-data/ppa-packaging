@@ -1,0 +1,39 @@
+#!/usr/bin/make -f
+# See debhelper(7) (uncomment to enable)
+# output every command that modifies files on the build system.
+#export DH_VERBOSE = 1
+
+
+LDFLAGS := $(shell dpkg-buildflags --get LDFLAGS)
+CXXFLAGS := $(shell dpkg-buildflags --get CXXFLAGS)
+CXXFLAGS += -std=c++14
+LIBDIR := /usr/lib/$(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
+
+%:
+	dh $@ --parallel
+
+override_dh_auto_configure:
+	./waf configure --prefix=/usr --sysconfdir=/etc --libdir="$(LIBDIR)" --localstatedir=/var --boost-libs="$(LIBDIR)"
+
+override_dh_auto_build:
+	./waf build
+
+override_dh_auto_install:
+	./waf install --destdir=debian/tmp
+
+override_dh_auto_clean:
+	./waf distclean
+
+override_dh_clean:
+	dh_clean
+	./waf distclean
+	rm -rf .waf-1*
+	rm -f .waf-tools/*.pyc
+	rm -f docs/*.pyc
+
+override_dh_auto_test:
+
+.PHONY: override_dh_strip
+override_dh_strip:
+	dh_strip --dbg-package=libndn-nac-dbg
+
