@@ -1,3 +1,10 @@
+repo-ng (0.0.23-g15f67df-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on 15f67df28d7b90c5d1cd9640de59b5a11c5d23f7
+    (https://github.com/named-data/repo-ng)
+
+ -- Alex Afanasyev <aa@cs.fiu.edu>  Mon, 23 Nov 2020 01:41:37 +0000
+
 repo-ng (0.0.22-g1359cc3-ppa2~DISTRO) DISTRO; urgency=low
 
   * Version based on 1359cc3fff7ed91f0685e0654be83b1de0ae2bcb
