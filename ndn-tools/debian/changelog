@@ -1,3 +1,10 @@
+ndn-tools (0.7.1-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on ndn-tools-0.7.1 (https://github.com/named-data/ndn-
+    tools)
+
+ -- Alex Afanasyev <aa@cs.fiu.edu>  Sun, 22 Nov 2020 22:15:23 +0000
+
 ndn-tools (0.7-1-g7d14815a-ppa3~DISTRO) DISTRO; urgency=low
 
   * Version based on 7d14815aaf5848ad8cdcd4c8aa20f1fef2cbaa38

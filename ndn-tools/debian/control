@@ -3,11 +3,11 @@ Priority: extra
 Maintainer: Alexander Afanasyev <alexander.afanasyev@ucla.edu>
 Build-Depends: debhelper (>= 8.0.0),
  dh-systemd (>= 1.5),
- python (>= 2.7.0),
+ python3 (>= 3.5.0),
  pkg-config (>= 0.26),
  libpcap-dev,
- python-sphinx,
- libndn-cxx-dev (>= 0.7.0),
+ python3-sphinx,
+ libndn-cxx-dev (>= 0.7.1),
  git
 Standards-Version: 3.9.2
 Section: net
