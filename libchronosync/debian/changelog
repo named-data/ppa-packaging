@@ -1,3 +1,10 @@
+libchronosync (0.5.4-3-g22eeb29-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on 22eeb2914f66feaa6d8e1c6391dd126bcc37b2ce
+    (https://github.com/named-data/ChronoSync.git)
+
+ -- Alex Afanasyev <aa@cs.fiu.edu>  Thu, 17 Feb 2022 21:17:06 +0000
+
 libchronosync (0.5.3-9-g5f408ae-ppa1~DISTRO) DISTRO; urgency=low
 
   * Version based on 5f408ae7f52f2fb792c65db733c80c6d4d5ecf48
