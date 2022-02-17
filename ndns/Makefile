@@ -2,13 +2,13 @@
 GIT_URL=https://github.com/named-data/ndns
 
 # Tag name or commit hash for checkout
-GIT_VERSION=28229df052fe40f00e1e4e9798b44be1e17a4ddc
+GIT_VERSION=81e9876da59c43d425d890d8231bd1c3e7e2a9fa
 
 # Package name
 NAME=ndns
 
 # Package version
-VERSION=0.0.12-g28229df
+VERSION=0.0.13-g81e9876da
 
 # PPA version
 PPA_VERSION=1

@@ -1,3 +1,10 @@
+ndns (0.0.13-g81e9876da-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on 81e9876da59c43d425d890d8231bd1c3e7e2a9fa
+    (https://github.com/named-data/ndns)
+
+ -- Alex Afanasyev <aa@cs.fiu.edu>  Thu, 17 Feb 2022 21:35:13 +0000
+
 ndns (0.0.12-g28229df-ppa1~DISTRO) DISTRO; urgency=low
 
   * Version based on 28229df052fe40f00e1e4e9798b44be1e17a4ddc
