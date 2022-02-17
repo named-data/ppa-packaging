@@ -1,3 +1,10 @@
+ndn-tools (0.7.1-28-g5998428e-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on 5998428e9cbb2ad2663a2ce0e0533d7578735dee
+    (https://github.com/named-data/ndn-tools)
+
+ -- Alex Afanasyev <aa@cs.fiu.edu>  Thu, 17 Feb 2022 21:39:26 +0000
+
 ndn-tools (0.7.1-ppa1~DISTRO) DISTRO; urgency=low
 
   * Version based on ndn-tools-0.7.1 (https://github.com/named-data/ndn-

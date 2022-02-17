@@ -7,7 +7,7 @@ Build-Depends: debhelper (>= 8.0.0),
  pkg-config (>= 0.26),
  libpcap-dev,
  python3-sphinx,
- libndn-cxx-dev (>= 0.7.1),
+ libndn-cxx-dev (>= 0.8.0),
  git
 Standards-Version: 3.9.2
 Section: net
