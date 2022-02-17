@@ -35,6 +35,7 @@ override_dh_clean:
 	rm -rf .waf-1*
 	rm -rf .waf3-1*
 	rm -f .waf-tools/*.pyc
+	rm -rf .waf-tools/__pycache__
 
 override_dh_auto_test:
 

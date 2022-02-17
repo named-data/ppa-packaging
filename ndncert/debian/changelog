@@ -1,3 +1,10 @@
+ndncert (0.0.5-1-gfae76c4dc-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on fae76c4dc736b0252e4503ef76c8738afce1d571
+    (https://github.com/named-data/ndncert)
+
+ -- Alex Afanasyev <aa@cs.fiu.edu>  Thu, 17 Feb 2022 21:24:51 +0000
+
 ndncert (0.0.4-1-g8579001-ppa1~DISTRO) DISTRO; urgency=low
 
   * Version based on 857900104088db6ff26e7710da4b4de2762f2361

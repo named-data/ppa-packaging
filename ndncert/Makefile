@@ -2,13 +2,13 @@
 GIT_URL=https://github.com/named-data/ndncert
 
 # Tag name or commit hash for checkout
-GIT_VERSION=857900104088db6ff26e7710da4b4de2762f2361
+GIT_VERSION=fae76c4dc736b0252e4503ef76c8738afce1d571
 
 # Package name
 NAME=ndncert
 
 # Package version
-VERSION=0.0.4-1-g8579001
+VERSION=0.0.5-1-gfae76c4dc
 
 # PPA version
 PPA_VERSION=1
