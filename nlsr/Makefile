@@ -11,6 +11,6 @@ NAME=nlsr
 VERSION=0.6.0-15-ga3a63975
 
 # PPA version
-PPA_VERSION=1
+PPA_VERSION=2
 
 include ../packaging.mk

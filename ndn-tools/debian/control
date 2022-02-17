@@ -2,14 +2,14 @@ Source: ndn-tools
 Priority: extra
 Maintainer: Alexander Afanasyev <alexander.afanasyev@ucla.edu>
 Build-Depends: debhelper (>= 8.0.0),
- dh-systemd (>= 1.5),
+ debhelper (>= 9.20160709),
  python3 (>= 3.5.0),
  pkg-config (>= 0.26),
  libpcap-dev,
  python3-sphinx,
  libndn-cxx-dev (>= 0.8.0),
  git
-Standards-Version: 3.9.2
+Standards-Version: 4.5.0
 Section: net
 Homepage: http://github.com/named-data/ndn-tools
 Vcs-Git: git://github.com/named-data/ndn-tools.git

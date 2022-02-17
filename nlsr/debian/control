@@ -1,8 +1,7 @@
 Source: nlsr
 Priority: extra
 Maintainer: Ashlesh Gawande <agawande@memphis.edu>
-Build-Depends: debhelper (>= 8.0.0),
- dh-systemd (>= 1.5),
+Build-Depends: debhelper (>= 9.20160709),
  python3 (>= 3.5.0),
  pkg-config (>= 0.26),
  libndn-cxx-dev (>= 0.8.0),
@@ -11,7 +10,7 @@ Build-Depends: debhelper (>= 8.0.0),
  libboost-all-dev (>= 1.58.0),
  python3-sphinx (>= 1.1.3),
  git
-Standards-Version: 3.9.2
+Standards-Version: 4.5.0
 Section: net
 Homepage: http://redmine.named-data.net/projects/nlsr/wiki/
 Vcs-Git: git://github.com/named-data/NLSR.git

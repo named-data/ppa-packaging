@@ -11,6 +11,6 @@ NAME=ndns
 VERSION=0.0.13-g81e9876da
 
 # PPA version
-PPA_VERSION=1
+PPA_VERSION=2
 
 include ../packaging.mk
