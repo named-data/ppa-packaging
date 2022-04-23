@@ -4,9 +4,9 @@ Maintainer: Junxiao Shi <deb@mail1.yoursunny.com>
 Build-Depends: debhelper (>= 11.0.0),
  python3 (>= 3.6.0),
  pkg-config (>= 0.29),
- python3-sphinx (>= 1.6.7),
  libboost-all-dev (>= 1.65.0),
  libndn-cxx-dev (>= 0.7.0),
+ python3-sphinx (>= 1.6.0),
  git
 Standards-Version: 4.1.2
 Section: libs
