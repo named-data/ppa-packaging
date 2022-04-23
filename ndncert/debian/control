@@ -5,7 +5,9 @@ Maintainer: Zhiyi Zhang <zhiyi@cs.ucla.edu>
 Build-Depends: debhelper (>= 8.0.0),
  python3 (>= 3.6.0),
  pkg-config (>= 0.26),
- libndn-cxx-dev (>= 0.6.5)
+ libndn-cxx-dev (>= 0.6.5),
+ libsqlite3-dev (>= 3.22.0),
+ libssl-dev (>= 1.1.1)
 Standards-Version: 3.9.2
 Homepage: https://github.com/named-data/ndncert
 Vcs-Browser: https://github.com/named-data/ndncert
@@ -22,7 +24,10 @@ Description: NDN Certificate Management System
 Package: libndncert-dev
 Architecture: i386 amd64 arm64 armel armhf ppc64el
 Section: libdevel
-Depends: libndncert (= ${binary:Version}), ${misc:Depends}, libndn-cxx-dev
+Depends: libndncert (= ${binary:Version}), ${misc:Depends},
+ libndn-cxx-dev,
+ libsqlite3-dev (>= 3.22.0),
+ libssl-dev (>= 1.1.1)
 Description: NDN Certificate Management System
  The library to support NDNCERT protocol and help
  NDN entities to manage certificates.

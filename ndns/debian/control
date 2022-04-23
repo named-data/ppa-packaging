@@ -6,6 +6,7 @@ Build-Depends: debhelper (>= 9.20160709),
  python3 (>= 3.6.0),
  pkg-config (>= 0.26),
  libndn-cxx-dev (>= 0.8.0),
+ libsqlite3-dev (>= 3.22.0),
  python3-sphinx (>= 1.6.0),
  git
 Standards-Version: 4.5.0

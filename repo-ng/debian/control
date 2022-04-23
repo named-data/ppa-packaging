@@ -5,7 +5,8 @@ Maintainer: Alexander Afanasyev <alexander.afanasyev@ucla.edu>
 Build-Depends: debhelper (>= 9.20160709),
  python3 (>= 3.6.0),
  pkg-config (>= 0.26),
- libndn-cxx-dev (>= 0.8.0)
+ libndn-cxx-dev (>= 0.8.0),
+ libsqlite3-dev (>= 3.22.0)
 Standards-Version: 3.9.2
 Homepage: https://github.com/named-data/repo-ng
 Vcs-Browser: https://github.com/named-data/repo-ng
