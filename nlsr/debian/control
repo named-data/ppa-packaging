@@ -1,5 +1,6 @@
 Source: nlsr
-Priority: extra
+Section: net
+Priority: optional
 Maintainer: Ashlesh Gawande <agawande@memphis.edu>
 Build-Depends: debhelper (>= 9.20160709),
  python3 (>= 3.6.0),
@@ -11,12 +12,11 @@ Build-Depends: debhelper (>= 9.20160709),
  python3-sphinx (>= 1.6.0),
  git
 Standards-Version: 4.5.0
-Section: net
-Homepage: http://redmine.named-data.net/projects/nlsr/wiki/
-Vcs-Git: git://github.com/named-data/NLSR.git
-Vcs-Browser: http://github.com/named-data/NLSR
+Homepage: https://named-data.net/doc/NLSR/
+Vcs-Browser: https://github.com/named-data/NLSR
+Vcs-Git: https://github.com/named-data/NLSR.git
 
 Package: nlsr
 Architecture: i386 amd64 arm64 armel armhf ppc64el
 Depends: ${shlibs:Depends}, ${misc:Depends}, libndn-cxx, ndnsec
-Description: A link state routing protocol for Named Data Networking
+Description: link state routing protocol for Named Data Networking

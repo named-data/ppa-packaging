@@ -1,5 +1,6 @@
 Source: ndn-tools
-Priority: extra
+Section: net
+Priority: optional
 Maintainer: Alexander Afanasyev <alexander.afanasyev@ucla.edu>
 Build-Depends: debhelper (>= 9.20160709),
  python3 (>= 3.6.0),
@@ -9,46 +10,44 @@ Build-Depends: debhelper (>= 9.20160709),
  python3-sphinx (>= 1.6.0),
  git
 Standards-Version: 4.5.0
-Section: net
-Homepage: http://github.com/named-data/ndn-tools
-Vcs-Git: git://github.com/named-data/ndn-tools.git
-Vcs-Browser: http://github.com/named-data/ndn-tools
+Homepage: https://github.com/named-data/ndn-tools
+Vcs-Browser: https://github.com/named-data/ndn-tools
+Vcs-Git: https://github.com/named-data/ndn-tools.git
 
 Package: ndn-tools
 Architecture: i386 amd64 arm64 armel armhf ppc64el
 Depends: ndndump, ndnping, ndnpeek, ndn-dissect, ndnchunks
-Description: A collection of essential tools for Named Data Networking
+Description: collection of essential tools for Named Data Networking (NDN)
 
 Package: ndndump
 Architecture: i386 amd64 arm64 armel armhf ppc64el
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: A traffic analysis tool that captures Interest and Data packets
+Description: traffic analysis tool that captures Interest and Data packets
  on the wire, and displays brief information about captured packets.
 
 Package: ndnping
 Architecture: i386 amd64 arm64 armel armhf ppc64el
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Reachability testing tools for Named Data Networking.
+Description: reachability testing tools for Named Data Networking (NDN)
 
 Package: ndnpeek
 Architecture: i386 amd64 arm64 armel armhf ppc64el
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: ndnpeek and ndnpoke are a pair of programs to respectively request and serve
- a single Data packet.
+Description: pair of programs to request and serve a single NDN Data packet
 
 Package: ndn-dissect
 Architecture: i386 amd64 arm64 armel armhf ppc64el
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: An NDN packet format inspector. It reads zero or more NDN packets from either
- an input file or the standard input, and displays the Type-Length-Value (TLV) structure
- of those packets on the standard output.
+Description: Named Data Networking (NDN) packet format inspector
+ ndn-dissect reads a sequence of NDN packets from either an input file or the
+ standard input, and displays the Type-Length-Value (TLV) structure of those
+ packets on the standard output.
 
 Package: ndn-dissect-wireshark
 Architecture: i386 amd64 arm64 armel armhf ppc64el
-Description: Wireshark extension to inspect TLV structure of NDN packets
+Description: Wireshark extension to inspect the TLV structure of NDN packets
 
 Package: ndnchunks
 Architecture: i386 amd64 arm64 armel armhf ppc64el
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: ndncatchunks and ndnputchunks for for publishing and retrieving segmented content
-
+Description: pair of programs for publishing and retrieving segmented content over NDN

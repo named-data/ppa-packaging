@@ -1,4 +1,5 @@
 Source: libpsync
+Section: libs
 Priority: optional
 Maintainer: Ashlesh Gawande <agawande@memphis.edu>
 Build-Depends: debhelper (>= 8.0.0),
@@ -9,20 +10,19 @@ Build-Depends: debhelper (>= 8.0.0),
  python3-sphinx (>= 1.6.0),
  git
 Standards-Version: 4.1.2
-Section: libs
 Homepage: https://named-data.net/doc/PSync/
-Vcs-Git: git://github.com/named-data/PSync.git
 Vcs-Browser: https://github.com/named-data/PSync
+Vcs-Git: https://github.com/named-data/PSync.git
 
 Package: libpsync
-Section: libs
 Architecture: i386 amd64 arm64 armel armhf ppc64el
+Section: libs
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Partial and Full Name Synchronization Library for NDN
 
 Package: libpsync-dev
-Section: libdevel
 Architecture: i386 amd64 arm64 armel armhf ppc64el
+Section: libdevel
 Depends: libndn-cxx-dev,
  libpsync (= ${binary:Version})
 Description: Development headers and libraries of Partial and Full Name Synchronization Library for NDN
@@ -30,7 +30,6 @@ Description: Development headers and libraries of Partial and Full Name Synchron
 Package: libpsync-dbg
 Architecture: any
 Section: debug
-Priority: extra
 Depends:
  libpsync (= ${binary:Version}),
  ${misc:Depends}

@@ -1,20 +1,20 @@
 Source: ndn-traffic-generator
-Priority: extra
+Section: net
+Priority: optional
 Maintainer: Alexander Afanasyev <alexander.afanasyev@ucla.edu>
 Build-Depends: debhelper (>= 8.0.0),
  python3 (>= 3.6.0),
  pkg-config (>= 0.26),
  libndn-cxx-dev (>= 0.8.0)
 Standards-Version: 3.9.2
-Section: net
-Homepage: http://github.com/named-data/ndn-traffic-generator
-Vcs-Git: git://github.com/named-data/ndn-traffic-generator.git
-Vcs-Browser: http://github.com/named-data/ndn-traffic-generator
+Homepage: https://github.com/named-data/ndn-traffic-generator
+Vcs-Browser: https://github.com/named-data/ndn-traffic-generator
+Vcs-Git: https://github.com/named-data/ndn-traffic-generator.git
 
 Package: ndn-traffic-generator
 Architecture: i386 amd64 arm64 armel armhf ppc64el
 Depends: ${shlibs:Depends}, ${misc:Depends}, libndn-cxx, ndnsec
-Description: Traffic Generator For NDN
+Description: traffic generator for Named Data Networking (NDN)
  This tool is designed to generate Interest and Data traffic in an NDN network.  The client
  and server tool accept traffic configuration files which can be used to specify the
  pattern of NDN traffic that is required to be generated.  Sample configuration files are

@@ -1,5 +1,6 @@
 Source: ndns
-Priority: extra
+Section: net
+Priority: optional
 Maintainer: Alexander Afanasyev <alexander.afanasyev@ucla.edu>
 Build-Depends: debhelper (>= 9.20160709),
  python3 (>= 3.6.0),
@@ -8,10 +9,9 @@ Build-Depends: debhelper (>= 9.20160709),
  python3-sphinx (>= 1.6.0),
  git
 Standards-Version: 4.5.0
-Section: net
-Homepage: http://github.com/named-data/ndns
-Vcs-Git: git://github.com/named-data/ndns.git
-Vcs-Browser: http://github.com/named-data/ndns
+Homepage: https://github.com/named-data/ndns
+Vcs-Browser: https://github.com/named-data/ndns
+Vcs-Git: https://github.com/named-data/ndns.git
 
 Package: ndns
 Architecture: i386 amd64 arm64 armel armhf ppc64el

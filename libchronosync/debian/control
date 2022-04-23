@@ -1,5 +1,6 @@
 Source: libchronosync
-Priority: extra
+Section: libs
+Priority: optional
 Maintainer: Alexander Afanasyev <alexander.afanasyev@ucla.edu>
 Build-Depends: debhelper (>= 8.0.0),
  python3 (>= 3.6.0),
@@ -9,20 +10,19 @@ Build-Depends: debhelper (>= 8.0.0),
  python3-sphinx (>= 1.6.0),
  git
 Standards-Version: 3.9.2
-Section: libs
-Homepage: http://named-data.net/doc/ChronoSync/
-Vcs-Git: git://github.com/named-data/ChronoSync.git
-Vcs-Browser: http://github.com/named-data/ChronoSync
+Homepage: https://github.com/named-data/ChronoSync
+Vcs-Browser: https://github.com/named-data/ChronoSync
+Vcs-Git: https://github.com/named-data/ChronoSync.git
 
 Package: libchronosync
-Section: libs
 Architecture: i386 amd64 arm64 armel armhf ppc64el
+Section: libs
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Sync library for multiuser realtime applications for NDN
 
 Package: libchronosync-dev
-Section: libdevel
 Architecture: i386 amd64 arm64 armel armhf ppc64el
+Section: libdevel
 Depends: libndn-cxx-dev,
  libchronosync (= ${binary:Version})
 Description: Development headers and libraries of sync library for multiuser realtime applications for NDN
@@ -30,7 +30,6 @@ Description: Development headers and libraries of sync library for multiuser rea
 Package: libchronosync-dbg
 Architecture: any
 Section: debug
-Priority: extra
 Depends:
  libchronosync (= ${binary:Version}),
  ${misc:Depends}

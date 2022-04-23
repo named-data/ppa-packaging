@@ -1,4 +1,5 @@
 Source: name-based-access-control
+Section: libs
 Priority: optional
 Maintainer: Junxiao Shi <deb@mail1.yoursunny.com>
 Build-Depends: debhelper (>= 11.0.0),
@@ -9,20 +10,19 @@ Build-Depends: debhelper (>= 11.0.0),
  python3-sphinx (>= 1.6.0),
  git
 Standards-Version: 4.1.2
-Section: libs
 Homepage: https://github.com/named-data/name-based-access-control
-Vcs-Git: git://github.com/named-data/name-based-access-control.git
 Vcs-Browser: https://github.com/named-data/name-based-access-control
+Vcs-Git: https://github.com/named-data/name-based-access-control.git
 
 Package: libndn-nac
-Section: libs
 Architecture: i386 amd64 arm64 armel armhf ppc64el
+Section: libs
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Named-Based Access Control Library for NDN
 
 Package: libndn-nac-dev
-Section: libdevel
 Architecture: i386 amd64 arm64 armel armhf ppc64el
+Section: libdevel
 Depends: libndn-cxx-dev,
  libndn-nac (= ${binary:Version})
 Description: Development headers and libraries of Named-Based Access Control Library for NDN
@@ -30,7 +30,6 @@ Description: Development headers and libraries of Named-Based Access Control Lib
 Package: libndn-nac-dbg
 Architecture: any
 Section: debug
-Priority: extra
 Depends:
  libndn-nac (= ${binary:Version}),
  ${misc:Depends}

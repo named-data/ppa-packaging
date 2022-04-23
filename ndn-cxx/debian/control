@@ -1,5 +1,6 @@
 Source: ndn-cxx
-Priority: extra
+Section: libs
+Priority: optional
 Maintainer: Alexander Afanasyev <alexander.afanasyev@ucla.edu>
 Build-Depends: debhelper (>= 8.0.0),
  python3 (>= 3.6.0),
@@ -10,14 +11,19 @@ Build-Depends: debhelper (>= 8.0.0),
  python3-sphinx (>= 1.6.0),
  git
 Standards-Version: 3.9.2
+Homepage: https://named-data.net/doc/ndn-cxx/
+Vcs-Browser: https://github.com/named-data/ndn-cxx
+Vcs-Git: https://github.com/named-data/ndn-cxx.git
+
+Package: libndn-cxx
+Architecture: i386 amd64 arm64 armel armhf ppc64el
 Section: libs
-Homepage: http://named-data.net/doc/ndn-cxx/
-Vcs-Git: git://github.com/named-data/ndn-cxx.git
-Vcs-Browser: http://github.com/named-data/ndn-cxx
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: NDN C++ library with eXperimental eXtensions
 
 Package: libndn-cxx-dev
-Section: libdevel
 Architecture: i386 amd64 arm64 armel armhf ppc64el
+Section: libdevel
 Depends:
  pkg-config (>= 0.26),
  libssl-dev (>=1.0.1),
@@ -26,24 +32,17 @@ Depends:
  libndn-cxx (= ${binary:Version})
 Description: Development headers and libraries of NDN C++ library with eXperimental eXtensions
 
-Package: libndn-cxx
-Section: libs
-Architecture: i386 amd64 arm64 armel armhf ppc64el
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: NDN C++ library with eXperimental eXtensions
-
 Package: libndn-cxx-dbg
 Architecture: any
 Section: debug
-Priority: extra
 Depends:
  libndn-cxx (= ${binary:Version}),
  ${misc:Depends}
-Description: debugging symbols for ndn-cxx
+Description: debugging symbols for libndn-cxx
 
 Package: ndnsec
-Section: libs
 Architecture: i386 amd64 arm64 armel armhf ppc64el
+Section: net
 Depends: libndn-cxx (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
 Description: NDN security tools
 Conflicts: ndn.cxx-security-tools
@@ -63,6 +62,5 @@ Description: Deprecated package (use libndn-cxx)
 Package: ndn-cxx-dbg
 Architecture: any
 Section: debug
-Priority: extra
 Depends: libndn-cxx-dbg (= ${binary:Version})
 Description: Deprecated package (use libndn-cxx-dbg)

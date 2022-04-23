@@ -1,5 +1,6 @@
 Source: nfd
-Priority: extra
+Section: net
+Priority: optional
 Maintainer: Alexander Afanasyev <alexander.afanasyev@ucla.edu>
 Build-Depends: debhelper (>= 9.20160709),
  python3 (>= 3.6.0),
@@ -11,10 +12,9 @@ Build-Depends: debhelper (>= 9.20160709),
  python3-sphinx (>= 1.6.0),
  git
 Standards-Version: 3.9.2
-Section: net
-Homepage: http://named-data.net/doc/NFD/
-Vcs-Git: git://github.com/named-data/NFD.git
-Vcs-Browser: http://github.com/named-data/NFD
+Homepage: https://named-data.net/doc/NFD/
+Vcs-Browser: https://github.com/named-data/NFD
+Vcs-Git: https://github.com/named-data/NFD.git
 
 Package: nfd
 Architecture: i386 amd64 arm64 armel armhf ppc64el
@@ -51,7 +51,6 @@ Description: NFD and all related daemons
 Package: nfd-dbg
 Architecture: any
 Section: debug
-Priority: extra
 Depends:
  nfd (= ${binary:Version}),
  ${misc:Depends}
