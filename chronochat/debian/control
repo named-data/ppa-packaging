@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 8.0.0),
  python3 (>= 3.6.0),
  pkg-config (>= 0.29),
  libboost-all-dev (>= 1.65.1),
- ndn-cxx-dev (>= 0.2.0),
+ libndn-cxx-dev (>= 0.7.0),
  liblog4cxx10-dev (>= 0.10.0),
  protobuf-compiler (>= 2.4.0),
  libprotobuf-dev (>= 2.4.0),
@@ -18,5 +18,5 @@ Vcs-Git: https://github.com/named-data/ChronoChat.git
 
 Package: chronochat
 Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, ndn-cxx
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: simple but interesting demo to visualize how ChronoSync library works

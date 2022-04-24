@@ -49,23 +49,4 @@ Package: ndnsec
 Architecture: i386 amd64 arm64 armel armhf ppc64el
 Section: net
 Depends: libndn-cxx (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
-Description: NDN security tools
-Conflicts: ndn.cxx-security-tools
-
-Package: ndn-cxx-dev
-Section: libdevel
-Architecture: any
-Depends: libndn-cxx-dev (= ${binary:Version})
-Description: Deprecated package (use libndn-cxx-dev)
-
-Package: ndn-cxx
-Section: libs
-Architecture: any
-Depends: libndn-cxx (= ${binary:Version})
-Description: Deprecated package (use libndn-cxx)
-
-Package: ndn-cxx-dbg
-Architecture: any
-Section: debug
-Depends: libndn-cxx-dbg (= ${binary:Version})
-Description: Deprecated package (use libndn-cxx-dbg)
+Description: Named Data Networking (NDN) security tools
