@@ -4,7 +4,8 @@ Priority: optional
 Maintainer: John DeHart <jdd@wustl.edu>
 Build-Depends: debhelper (>= 9.20160709),
  python3 (>= 3.6.0),
- pkg-config (>= 0.26),
+ pkg-config (>= 0.29),
+ libboost-all-dev (>= 1.65.1),
  libndn-cxx-dev (>= 0.8.0)
 Standards-Version: 3.9.2
 Homepage: https://github.com/WU-ARL/ndnmapDataCollector

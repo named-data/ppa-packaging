@@ -4,11 +4,11 @@ Priority: optional
 Maintainer: Ashlesh Gawande <agawande@memphis.edu>
 Build-Depends: debhelper (>= 9.20160709),
  python3 (>= 3.6.0),
- pkg-config (>= 0.26),
+ pkg-config (>= 0.29),
+ libboost-all-dev (>= 1.65.1),
  libndn-cxx-dev (>= 0.8.0),
  libchronosync-dev (>= 0.5.4),
  libpsync-dev (>= 0.3.0),
- libboost-all-dev (>= 1.58.0),
  python3-sphinx (>= 1.6.0),
  git
 Standards-Version: 4.5.0

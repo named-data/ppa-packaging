@@ -4,10 +4,10 @@ Priority: optional
 Maintainer: Alexander Afanasyev <alexander.afanasyev@ucla.edu>
 Build-Depends: debhelper (>= 8.0.0),
  python3 (>= 3.6.0),
- pkg-config (>= 0.26),
+ pkg-config (>= 0.29),
+ libboost-all-dev (>= 1.65.1),
  libsqlite3-dev (>= 3.22.0),
  libssl-dev (>= 1.1.1),
- libboost-all-dev (>= 1.53.0),
  python3-sphinx (>= 1.6.0),
  git
 Standards-Version: 3.9.2
@@ -24,11 +24,17 @@ Description: NDN C++ library with eXperimental eXtensions
 Package: libndn-cxx-dev
 Architecture: i386 amd64 arm64 armel armhf ppc64el
 Section: libdevel
-Depends:
+Depends: libndn-cxx (= ${binary:Version}),
+ libboost-dev (>= 1.65.1),
+ libboost-chrono-dev (>= 1.65.1),
+ libboost-date-time-dev (>= 1.65.1),
+ libboost-filesystem-dev (>= 1.65.1),
+ libboost-iostreams-dev (>= 1.65.1),
+ libboost-log-dev (>= 1.65.1),
+ libboost-stacktrace-dev (>= 1.65.1),
+ libboost-system-dev (>= 1.65.1),
  libsqlite3-dev (>= 3.22.0),
- libssl-dev (>= 1.1.1),
- libboost-all-dev (>= 1.53.0),
- libndn-cxx (= ${binary:Version})
+ libssl-dev (>= 1.1.1)
 Description: Development headers and libraries of NDN C++ library with eXperimental eXtensions
 
 Package: libndn-cxx-dbg

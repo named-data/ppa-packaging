@@ -4,10 +4,10 @@ Priority: optional
 Maintainer: Alexander Afanasyev <alexander.afanasyev@ucla.edu>
 Build-Depends: debhelper (>= 9.20160709),
  python3 (>= 3.6.0),
- pkg-config (>= 0.26),
+ pkg-config (>= 0.29),
+ libboost-all-dev (>= 1.65.1),
  libndn-cxx-dev (>= 0.8.0),
- libpcap-dev (>= 1.5.3),
- libboost-all-dev (>= 1.58.0),
+ libpcap-dev,
  libsystemd-dev,
  python3-sphinx (>= 1.6.0),
  git

@@ -4,12 +4,12 @@ Priority: optional
 Maintainer: Alexander Afanasyev <alexander.afanasyev@ucla.edu>
 Build-Depends: debhelper (>= 8.0.0),
  python3 (>= 3.6.0),
- pkg-config (>= 0.26),
+ pkg-config (>= 0.29),
+ libboost-all-dev (>= 1.65.1),
  ndn-cxx-dev (>= 0.2.0),
  liblog4cxx10-dev (>= 0.10.0),
  protobuf-compiler (>= 2.4.0),
  libprotobuf-dev (>= 2.4.0),
- libboost-all-dev (>= 1.48.0),
  libqt4-dev
 Standards-Version: 3.9.2
 Homepage: https://github.com/named-data/ChronoChat
