@@ -15,7 +15,8 @@ Vcs-Git: https://github.com/named-data/repo-ng.git
 
 Package: repo-ng
 Architecture: i386 amd64 arm64 armel armhf ppc64el
-Depends: ${shlibs:Depends}, ${misc:Depends}, libndn-cxx, ndnsec
+Depends: ${shlibs:Depends}, ${misc:Depends}, ndnsec
+Suggests: nfd
 Description: next generation of NDN repository
  repo-ng is an implementation of a Named Data Networking data repository with the protocol
  defined on NDN wiki: http://redmine.named-data.net/projects/repo-ng/wiki

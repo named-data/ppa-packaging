@@ -49,14 +49,17 @@ Description: NDN Certificate Management System (debugging symbols)
 
 Package: ndncert
 Architecture: i386 amd64 arm64 armel armhf ppc64el
-Depends: ${shlibs:Depends}, ${misc:Depends}, libndn-cxx, ndnsec
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends: ndnsec
 Description: NDN Certificate Management System
  Tools to support NDNCERT protocol and help
  NDN entities do certificate management.
 
 Package: ndncert-server
 Architecture: i386 amd64 arm64 armel armhf ppc64el
-Depends: ${shlibs:Depends}, ${misc:Depends}, ndncert, libndn-cxx, ndnsec, nfd
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends: ndnsec
+Suggests: nfd
 Description: NDN Certificate Management System
  Daemon to support NDNCERT protocol and help
  NDN entities do certificate management.

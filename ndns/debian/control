@@ -17,7 +17,8 @@ Vcs-Git: https://github.com/named-data/ndns.git
 
 Package: ndns
 Architecture: i386 amd64 arm64 armel armhf ppc64el
-Depends: ${shlibs:Depends}, ${misc:Depends}, nfd
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: nfd
 Description: Domain Name Service for Named Data Networking
  NDNS is a completely distributed database system that largely mimics
  the structure of the DNS system in today's Internet but operates within

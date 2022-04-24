@@ -18,5 +18,7 @@ Vcs-Git: https://github.com/named-data/NLSR.git
 
 Package: nlsr
 Architecture: i386 amd64 arm64 armel armhf ppc64el
-Depends: ${shlibs:Depends}, ${misc:Depends}, libndn-cxx, ndnsec
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends: ndnsec
+Suggests: nfd
 Description: link state routing protocol for Named Data Networking
