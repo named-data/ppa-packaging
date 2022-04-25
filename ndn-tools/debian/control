@@ -17,7 +17,7 @@ Vcs-Git: https://github.com/named-data/ndn-tools.git
 
 Package: ndn-tools
 Architecture: i386 amd64 arm64 armel armhf ppc64el
-Depends: ndndump, ndnping, ndnpeek, ndn-dissect, ndnchunks
+Depends: ${misc:Depends}, ndndump, ndnping, ndnpeek, ndn-dissect, ndnchunks
 Description: collection of essential tools for Named Data Networking (NDN)
 
 Package: ndndump
@@ -28,7 +28,7 @@ Description: traffic analysis tool that captures Interest and Data packets
 
 Package: ndnping
 Architecture: i386 amd64 arm64 armel armhf ppc64el
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, ndnsec
 Description: reachability testing tools for Named Data Networking (NDN)
 
 Package: ndnpeek
@@ -46,6 +46,8 @@ Description: Named Data Networking (NDN) packet format inspector
 
 Package: ndn-dissect-wireshark
 Architecture: i386 amd64 arm64 armel armhf ppc64el
+Depends: ${misc:Depends}
+Suggests: wireshark | tshark
 Description: Wireshark extension to inspect the TLV structure of NDN packets
 
 Package: ndnchunks

@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 8.0.0),
  python3 (>= 3.6.0),
  pkg-config (>= 0.29),
  libboost-all-dev (>= 1.65.1),
- libndn-cxx-dev (>= 0.7.0),
+ libndn-cxx-dev (>= 0.8.0),
  python3-sphinx (>= 1.6.0),
  git
 Standards-Version: 4.1.2
@@ -23,17 +23,14 @@ Description: Partial and Full Name Synchronization Library for NDN
 Package: libpsync-dev
 Architecture: i386 amd64 arm64 armel armhf ppc64el
 Section: libdevel
-Depends:
+Depends: libpsync (= ${binary:Version}), ${misc:Depends},
  libboost-dev (>= 1.65.1),
  libboost-iostreams-dev (>= 1.65.1),
- libndn-cxx-dev,
- libpsync (= ${binary:Version})
+ libndn-cxx-dev (>= 0.8.0)
 Description: Development headers and libraries of Partial and Full Name Synchronization Library for NDN
 
 Package: libpsync-dbg
 Architecture: any
 Section: debug
-Depends:
- libpsync (= ${binary:Version}),
- ${misc:Depends}
+Depends: libpsync (= ${binary:Version}), ${misc:Depends}
 Description: debugging symbols for libpsync

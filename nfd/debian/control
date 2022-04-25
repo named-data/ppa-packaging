@@ -18,7 +18,7 @@ Vcs-Git: https://github.com/named-data/NFD.git
 
 Package: nfd
 Architecture: i386 amd64 arm64 armel armhf ppc64el
-Depends: ${shlibs:Depends}, ${misc:Depends}, libndn-cxx, ndnsec, sudo, procps, adduser, libcap2-bin
+Depends: ${shlibs:Depends}, ${misc:Depends}, ndnsec, sudo, procps, adduser, libcap2-bin
 Description: NFD - Named Data Networking Forwarding Daemon
  NFD is a network forwarder that implements and evolves together with the Named Data
  Networking (NDN) protocol.
@@ -54,7 +54,5 @@ Description: NFD and all related daemons
 Package: nfd-dbg
 Architecture: any
 Section: debug
-Depends:
- nfd (= ${binary:Version}),
- ${misc:Depends}
+Depends: nfd (= ${binary:Version}), ${misc:Depends}
 Description: debugging symbols for nfd

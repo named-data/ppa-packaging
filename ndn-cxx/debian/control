@@ -24,7 +24,7 @@ Description: NDN C++ library with eXperimental eXtensions
 Package: libndn-cxx-dev
 Architecture: i386 amd64 arm64 armel armhf ppc64el
 Section: libdevel
-Depends: libndn-cxx (= ${binary:Version}),
+Depends: libndn-cxx (= ${binary:Version}), ${misc:Depends},
  libboost-dev (>= 1.65.1),
  libboost-chrono-dev (>= 1.65.1),
  libboost-date-time-dev (>= 1.65.1),
@@ -40,9 +40,7 @@ Description: Development headers and libraries of NDN C++ library with eXperimen
 Package: libndn-cxx-dbg
 Architecture: any
 Section: debug
-Depends:
- libndn-cxx (= ${binary:Version}),
- ${misc:Depends}
+Depends: libndn-cxx (= ${binary:Version}), ${misc:Depends}
 Description: debugging symbols for libndn-cxx
 
 Package: ndnsec

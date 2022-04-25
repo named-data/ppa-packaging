@@ -14,7 +14,7 @@ Vcs-Git: https://github.com/named-data/ndn-traffic-generator.git
 
 Package: ndn-traffic-generator
 Architecture: i386 amd64 arm64 armel armhf ppc64el
-Depends: ${shlibs:Depends}, ${misc:Depends}, libndn-cxx, ndnsec
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: traffic generator for Named Data Networking (NDN)
  This tool is designed to generate Interest and Data traffic in an NDN network.  The client
  and server tool accept traffic configuration files which can be used to specify the
