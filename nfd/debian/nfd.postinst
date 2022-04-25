@@ -12,12 +12,12 @@ mkdir -p "/var/lib/ndn/nfd/.ndn"
 
 (
     export HOME="/var/lib/ndn/nfd"
-    if [ -z "$(ndnsec-get-default 2>/dev/null)" ]; then
-        ndnsec-keygen "/localhost/daemons/nfd" | ndnsec-install-cert -
+    if [ -z "$(ndnsec get-default 2>/dev/null)" ]; then
+        ndnsec key-gen "/localhost/daemons/nfd" | ndnsec cert-install -
     fi
 
     mkdir -p "/etc/ndn/certs"
-    ndnsec-dump-certificate -i "$(ndnsec-get-default)" > \
+    ndnsec cert-dump -i "$(ndnsec get-default)" > \
         "/etc/ndn/certs/localhost_daemons_nfd.ndncert"
 )
 

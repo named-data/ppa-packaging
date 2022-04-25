@@ -10,8 +10,8 @@ if [ ! -f /var/lib/ndn/$APP/.ndn/pib.db ]; then
     # Create HOME and generate self-signed NDN certificate
     sudo mkdir -p /var/lib/ndn/$APP/.ndn
     sudo chown -R ndn:ndn /var/lib/ndn/$APP
-    sudo -u ndn -g ndn HOME=/var/lib/ndn/$APP ndnsec-keygen /localhost/daemons/$APP | \
-      sudo -u ndn -g ndn HOME=/var/lib/ndn/$APP ndnsec-install-cert -
+    sudo -u ndn -g ndn HOME=/var/lib/ndn/$APP ndnsec key-gen /localhost/daemons/$APP | \
+      sudo -u ndn -g ndn HOME=/var/lib/ndn/$APP ndnsec cert-install -
 fi
 
 #DEBHELPER#
