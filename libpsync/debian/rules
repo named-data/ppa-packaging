@@ -3,10 +3,8 @@
 # output every command that modifies files on the build system.
 #export DH_VERBOSE = 1
 
-
 LDFLAGS := $(shell dpkg-buildflags --get LDFLAGS)
 CXXFLAGS := $(shell dpkg-buildflags --get CXXFLAGS)
-CXXFLAGS += -std=c++14
 LIBDIR := /usr/lib/$(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 
 %:
@@ -38,4 +36,3 @@ override_dh_auto_test:
 .PHONY: override_dh_strip
 override_dh_strip:
 	dh_strip --dbg-package=libpsync-dbg
-
