@@ -2,7 +2,7 @@
 PPA=ppa:named-data/ppa-dev
 
 # List of target distributions
-DISTROS=bionic focal impish
+DISTROS=focal jammy kinetic
 
 DEBUILD=debuild -S -d
 
