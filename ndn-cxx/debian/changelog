@@ -1,3 +1,31 @@
+ndn-cxx (0.8.1-bp2-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on ndn-cxx-0.8.1 (https://github.com/named-data/ndn-
+    cxx.git)
+
+ -- Alex Afanasyev <aa@cs.fiu.edu>  Tue, 10 Jan 2023 01:19:24 +0000
+
+ndn-cxx (0.8.1-bp1-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on ndn-cxx-0.8.1 (https://github.com/named-data/ndn-
+    cxx.git)
+
+ -- Alex Afanasyev <aa@cs.fiu.edu>  Mon, 09 Jan 2023 20:53:24 +0000
+
+ndn-cxx (0.8.1-ppa2~DISTRO) DISTRO; urgency=low
+
+  * Version based on ndn-cxx-0.8.1 (https://github.com/named-data/ndn-
+    cxx.git)
+
+ -- Alex Afanasyev <aa@cs.fiu.edu>  Mon, 09 Jan 2023 20:41:46 +0000
+
+ndn-cxx (0.8.1-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on ndn-cxx-0.8.1 (https://github.com/named-data/ndn-
+    cxx.git)
+
+ -- Alex Afanasyev <aa@cs.fiu.edu>  Fri, 06 Jan 2023 17:50:54 +0000
+
 ndn-cxx (0.8.0-ppa1~DISTRO) DISTRO; urgency=low
 
   * Version based on ndn-cxx-0.8.0 (https://github.com/named-data/ndn-
