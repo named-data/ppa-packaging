@@ -8,7 +8,7 @@ GIT_VERSION=7e9d7e4f9a9d055a8ce75ca08caba37d0e56fcdb
 NAME=ndn-tools
 
 # Package version
-VERSION=22.12-15-g7e9d7e4f
+VERSION=22.12-15-g7e9d7e4f-bp3
 
 # PPA version
 PPA_VERSION=1

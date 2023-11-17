@@ -1,3 +1,31 @@
+ndn-tools (22.12-15-g7e9d7e4f-bp3-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on 7e9d7e4f9a9d055a8ce75ca08caba37d0e56fcdb
+    (https://github.com/named-data/ndn-tools)
+
+ -- Alex Afanasyev <aa@cs.fiu.edu>  Fri, 17 Nov 2023 19:41:25 +0000
+
+ndn-tools (22.12-15-g7e9d7e4f-bp2-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on 7e9d7e4f9a9d055a8ce75ca08caba37d0e56fcdb
+    (https://github.com/named-data/ndn-tools)
+
+ -- Alex Afanasyev <aa@cs.fiu.edu>  Fri, 17 Nov 2023 19:29:31 +0000
+
+ndn-tools (22.12-15-g7e9d7e4f-bp1-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on 7e9d7e4f9a9d055a8ce75ca08caba37d0e56fcdb
+    (https://github.com/named-data/ndn-tools)
+
+ -- Alex Afanasyev <aa@cs.fiu.edu>  Fri, 17 Nov 2023 19:10:45 +0000
+
+ndn-tools (22.12-15-g7e9d7e4f-ppa2~DISTRO) DISTRO; urgency=low
+
+  * Version based on 7e9d7e4f9a9d055a8ce75ca08caba37d0e56fcdb
+    (https://github.com/named-data/ndn-tools)
+
+ -- Alex Afanasyev <aa@cs.fiu.edu>  Fri, 17 Nov 2023 18:57:28 +0000
+
 ndn-tools (22.12-15-g7e9d7e4f-ppa1~DISTRO) DISTRO; urgency=low
 
   * Version based on 7e9d7e4f9a9d055a8ce75ca08caba37d0e56fcdb
