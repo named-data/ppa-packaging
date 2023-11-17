@@ -1,3 +1,10 @@
+nfd (22.12-33-ge277f8b9-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on e277f8b9e8f40f7d98e71704b80c0f03df0bd68a
+    (https://github.com/named-data/NFD.git)
+
+ -- Alex Afanasyev <aa@cs.fiu.edu>  Fri, 17 Nov 2023 18:26:31 +0000
+
 nfd (22.12-ppa1~DISTRO) DISTRO; urgency=low
 
   * Version based on NFD-22.12 (https://github.com/named-data/NFD.git)
