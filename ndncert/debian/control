@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 8.0.0),
  python3 (>= 3.6.0),
  pkg-config (>= 0.29),
  libboost-all-dev (>= 1.65.1),
- libndn-cxx-dev (>= 0.8.0),
+ libndn-cxx-dev (>= 0.8.1),
  libsqlite3-dev (>= 3.22.0),
  libssl-dev (>= 1.1.1)
 Standards-Version: 3.9.2

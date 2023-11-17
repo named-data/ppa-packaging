@@ -1,3 +1,10 @@
+repo-ng (0.0.25-g164ae3b36-ppa2~DISTRO) DISTRO; urgency=low
+
+  * Version based on 164ae3b36d05d7a3af522f86cd80eb3c650ae65b
+    (https://github.com/named-data/repo-ng)
+
+ -- Alex Afanasyev <aa@cs.fiu.edu>  Fri, 17 Nov 2023 19:06:08 +0000
+
 repo-ng (0.0.24-g333e3ebfb-ppa2~DISTRO) DISTRO; urgency=low
 
   * Version based on 333e3ebfb537d5aca977478f363e5d32a74b7be5

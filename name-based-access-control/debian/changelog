@@ -1,3 +1,10 @@
+name-based-access-control (0.1.3-commit-74b3a7ede-ppa1~DISTRO) DISTRO; urgency=low
+
+  * Version based on 74b3a7ede73f7e8f7479739420989674d394a761
+    (https://github.com/named-data/name-based-access-control.git)
+
+ -- Alex Afanasyev <aa@cs.fiu.edu>  Fri, 17 Nov 2023 19:20:56 +0000
+
 name-based-access-control (0.1.2-commit-a7ac15b77-ppa1~DISTRO) DISTRO; urgency=low
 
   * Version based on a7ac15b778009ea6eaa174032e5cc69385db566b
