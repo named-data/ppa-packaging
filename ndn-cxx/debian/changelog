@@ -1,9 +1,9 @@
-ndn-cxx (0.8.1-bp2-ppa1~DISTRO) DISTRO; urgency=low
+ndn-cxx (0.8.1-bp4-43-g49e1e87b2-ppa1~DISTRO) DISTRO; urgency=low
 
-  * Version based on ndn-cxx-0.8.1 (https://github.com/named-data/ndn-
-    cxx.git)
+  * Version based on 49e1e87b24da0bfdf61c0cd965bfc11164026192
+    (https://github.com/named-data/ndn-cxx.git)
 
- -- Alex Afanasyev <aa@cs.fiu.edu>  Tue, 10 Jan 2023 01:19:24 +0000
+ -- Alex Afanasyev <aa@cs.fiu.edu>  Fri, 17 Nov 2023 17:48:07 +0000
 
 ndn-cxx (0.8.1-bp1-ppa1~DISTRO) DISTRO; urgency=low
 
