@@ -2,15 +2,15 @@
 GIT_URL=https://github.com/named-data/NLSR
 
 # Tag name or commit hash for checkout
-GIT_VERSION=a3a63975d13bcdf3a6851dcd8f9413049fb62c7d
+GIT_VERSION=fd1e9406489606fea52b5e3e60d2b4cc66dab109
 
 # Package name
 NAME=nlsr
 
 # Package version
-VERSION=0.6.0-15-ga3a63975
+VERSION=0.7.0-11-gfd1e9406
 
 # PPA version
-PPA_VERSION=2
+PPA_VERSION=1
 
 include ../packaging.mk
