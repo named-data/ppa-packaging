@@ -1,7 +1,7 @@
 Source: name-based-access-control
 Section: libs
 Priority: optional
-Maintainer: Junxiao Shi <deb@mail1.yoursunny.com>
+Maintainer: Alexander Afanasyev <alexander.afanasyev@ucla.edu>
 Build-Depends: debhelper (>= 11.0.0),
  python3 (>= 3.6.0),
  pkg-config (>= 0.29),

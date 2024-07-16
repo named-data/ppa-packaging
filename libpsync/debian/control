@@ -1,7 +1,7 @@
 Source: libpsync
 Section: libs
 Priority: optional
-Maintainer: Ashlesh Gawande <agawande@memphis.edu>
+Maintainer: Alexander Afanasyev <alexander.afanasyev@ucla.edu>
 Build-Depends: debhelper (>= 8.0.0),
  python3 (>= 3.6.0),
  pkg-config (>= 0.29),
