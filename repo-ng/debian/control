@@ -3,7 +3,7 @@ Section: net
 Priority: optional
 Maintainer: Alexander Afanasyev <alexander.afanasyev@ucla.edu>
 Build-Depends: debhelper (>= 9.20160709),
- python3 (>= 3.6.0),
+ python3 (>= 3.8),
  pkg-config (>= 0.29),
  libboost-all-dev (>= 1.65.1),
  libndn-cxx-dev (>= 0.8.1),
