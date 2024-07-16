@@ -15,12 +15,12 @@ distro: work/${NAME}_${VERSION}
 work/${NAME}_${VERSION}:
 	\
 mkdir work || true ; \
-cd work	; \
+cd work ; \
 git clone "${GIT_URL}" "${NAME}_${VERSION}" ; \
 cd "${NAME}_${VERSION}" ; \
 git fetch origin "${GIT_VERSION}"; \
 git checkout "${GIT_VERSION}" ; \
-git submodule init ; git submodule update ; \
+git submodule update --init ; \
 (./waf version || true) ; \
 (./waf distclean || true) ; \
 cd .. ; \
@@ -48,7 +48,7 @@ fi
 cd "work/${NAME}_${VERSION}" ; \
 for distro in ${DISTROS}; do \
   NEW_VER="${VERSION}-ppa${PPA_VERSION}~$$distro"; \
-  rm -Rf debian ; cp -r ../../debian . ; \
+  rm -rf debian ; cp -r ../../debian . ; \
   sed -i -e "s/DISTRO/$$distro/g" debian/changelog ; \
   for file in debian/*.$$distro; do \
     if [ -f $$file ]; then \
@@ -73,7 +73,7 @@ done
 
 dput: source-build
 	\
-cd "work" ; \
+cd work ; \
 for distro in ${DISTROS}; do \
   dput -f "${PPA}" "${NAME}_${VERSION}-ppa${PPA_VERSION}~$$distro""_source.changes" ; \
 done ; \
@@ -83,8 +83,8 @@ NEW_VER="${VERSION}-ppa${PPA_VERSION}~DISTRO"; \
 CUR_VER=`dpkg-parsechangelog | grep '^Version: ' | awk '{print $$2}'`; \
 if dpkg --compare-versions $$NEW_VER gt $$CUR_VER; then \
   dch -v $$NEW_VER -D DISTRO --force-distribution \
-        -u low "${CHANGE}Version based on ${GIT_VERSION} (${GIT_URL})" ; \
+      -u low "${CHANGE}Version based on ${GIT_VERSION} (${GIT_URL})" ; \
 fi
 
 clean:
-	@rm -Rf work
+	@rm -rf work
