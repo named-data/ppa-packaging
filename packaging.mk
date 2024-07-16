@@ -2,7 +2,7 @@
 PPA=ppa:named-data/ppa-dev
 
 # List of target distributions
-DISTROS=focal jammy lunar mantic
+DISTROS=focal jammy noble
 
 DEBUILD=debuild -S -d
 

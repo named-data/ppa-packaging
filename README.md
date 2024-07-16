@@ -19,10 +19,10 @@ Before running `dput`, make sure that you have access to upload packages to `nam
 
 To build a specific package, go to the package's folder and run the same `make dput` command.
 
-## Advanced uses
+## Advanced usage
 
 By default, the scripts will create source packages for Ubuntu 20.04 (focal), 22.04 (jammy),
-and 22.10 (kinetic). If necessary, the default actions and distributions can be overriden,
+and 24.04 (noble). If necessary, the default actions and distributions can be overriden,
 for example:
 
 * To only build source packages (no upload), only for Ubuntu 12.04:
