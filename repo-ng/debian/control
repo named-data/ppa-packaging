@@ -5,7 +5,7 @@ Maintainer: Alexander Afanasyev <alexander.afanasyev@ucla.edu>
 Build-Depends: debhelper (>= 9.20160709),
  python3 (>= 3.8),
  pkg-config (>= 0.29),
- libboost-all-dev (>= 1.65.1),
+ libboost-all-dev (>= 1.71.0),
  libndn-cxx-dev (>= 0.8.1),
  libsqlite3-dev (>= 3.22.0)
 Standards-Version: 3.9.2
